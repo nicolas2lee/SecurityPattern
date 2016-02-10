@@ -1,0 +1,256 @@
+I-Logix-RPY-Archive version 8.10.0 * 6930133
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 32;
+	- value = "DefaultComponent/DefaultConfig/Default/Default_pkgClass.java" 1.8.2016::10:1:51
+	"DefaultComponent/DefaultConfig/Default/FieldService.java" 1.8.2016::10:1:51
+	"DefaultComponent/DefaultConfig/Default/FieldUnit.java" 1.8.2016::10:13:37
+	"DefaultComponent/DefaultConfig/Default/HMI.java" 1.8.2016::10:1:51
+	"DefaultComponent/DefaultConfig/Default/LocalController.java" 1.8.2016::10:1:51
+	"DefaultComponent/DefaultConfig/Default/centerController.java" 1.8.2016::10:8:27
+	"DefaultComponent/DefaultConfig/Default/communiNetwork.java" 1.8.2016::10:10:45
+	"DefaultComponent/DefaultConfig/Default/dataServer.java" 1.8.2016::10:1:51
+	"DefaultComponent/DefaultConfig/Default/user.java" 1.8.2016::10:1:51
+	"DefaultComponent/DefaultConfig/secureSCADA/Administrator.java" 1.28.2016::10:14:56
+	"DefaultComponent/DefaultConfig/secureSCADA/CCOwner.java" 1.28.2016::10:14:56
+	"DefaultComponent/DefaultConfig/secureSCADA/LCReader.java" 1.28.2016::10:14:56
+	"DefaultComponent/DefaultConfig/secureSCADA/Unknown.java" 1.28.2016::10:14:56
+	"DefaultComponent/DefaultConfig/secureSCADA/User.java" 1.28.2016::10:14:56
+	"DefaultComponent/DefaultConfig/secureSCADA/secureSCADA_pkgClass.java" 1.28.2016::10:14:56
+	"DefaultComponent/DefaultConfig/securityPattern/Rights.java" 1.28.2016::10:14:56
+	"DefaultComponent/DefaultConfig/securityPattern/SecurityPolicy.java" 1.28.2016::10:14:56
+	"DefaultComponent/DefaultConfig/securityPattern/SingleAccessPoint.java" 1.28.2016::8:52:20
+	"DefaultComponent/DefaultConfig/securityPattern/checkPoint.java" 1.28.2016::10:14:56
+	"DefaultComponent/DefaultConfig/securityPattern/counterMeasure.java" 1.14.2016::10:1:59
+	"DefaultComponent/DefaultConfig/securityPattern/protectedObject.java" 1.28.2016::10:14:56
+	"DefaultComponent/DefaultConfig/securityPattern/securityPattern_pkgClass.java" 1.14.2016::10:40:11
+	"DefaultComponent/DefaultConfig/securityPattern/user_securityPattern.java" 1.28.2016::10:14:56
+	"DefaultComponent/DefaultConfig/sysSCADA/FieldService.java" 1.8.2016::19:40:36
+	"DefaultComponent/DefaultConfig/sysSCADA/FieldUnit.java" 1.28.2016::10:36:26
+	"DefaultComponent/DefaultConfig/sysSCADA/HMI.java" 1.28.2016::10:30:17
+	"DefaultComponent/DefaultConfig/sysSCADA/LocalController.java" 1.28.2016::10:36:26
+	"DefaultComponent/DefaultConfig/sysSCADA/centerController.java" 1.28.2016::10:30:17
+	"DefaultComponent/DefaultConfig/sysSCADA/commNetwork.java" 1.28.2016::10:30:17
+	"DefaultComponent/DefaultConfig/sysSCADA/dataServer.java" 1.8.2016::19:28:54
+	"DefaultComponent/DefaultConfig/sysSCADA/sysSCADA_pkgClass.java" 1.28.2016::10:30:17
+	"DefaultComponent/DefaultConfig/sysSCADA/user.java" 1.14.2016::7:59:17
+	
+}
+- size = 24;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "sysSCADA.sbs";
+	- _subsystem = "sysSCADA";
+	- _class = "";
+	- _name = "LocalController";
+	- _id = GUID d7ebb974-23e5-4923-a722-b4bc5b7e7628;
+}
+- genTime = 1.28.2016::10:36:26;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = "secureSCADA.sbs";
+	- _subsystem = "secureSCADA";
+	- _class = "";
+	- _name = "User";
+	- _id = GUID 455bb1b0-4d7e-4864-87d3-45b092ec5839;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "sysSCADA.sbs";
+	- _subsystem = "sysSCADA";
+	- _class = "";
+	- _name = "FieldService";
+	- _id = GUID 92531e1c-5a39-4db6-a816-4ccfc58be0eb;
+}
+- genTime = 1.14.2016::10:40:12;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = "securityPattern.sbs";
+	- _subsystem = "securityPattern";
+	- _class = "";
+	- _name = "user_securityPattern";
+	- _id = GUID b2d1080c-e55d-4c08-953b-1e2ead7abc69;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = "secureSCADA.sbs";
+	- _subsystem = "secureSCADA";
+	- _class = "";
+	- _name = "LCReader";
+	- _id = GUID dbc7f9bf-0091-4bbd-a6bd-97827848496b;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = "securityPattern.sbs";
+	- _subsystem = "securityPattern";
+	- _class = "";
+	- _name = "protectedObject";
+	- _id = GUID c8c47d1b-63a1-4fef-b0b8-8965b0d684aa;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "securityPattern.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "securityPattern";
+	- _id = GUID 6633370d-8282-4f9c-9038-2f866ee0dbde;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "securityPattern.sbs";
+	- _subsystem = "securityPattern";
+	- _class = "";
+	- _name = "counterMeasure";
+	- _id = GUID 09e380a5-fc41-4084-b739-d5b0ba8f315d;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "sysSCADA.sbs";
+	- _subsystem = "sysSCADA";
+	- _class = "";
+	- _name = "centerController";
+	- _id = GUID 049a743b-c3ea-4efd-b23b-1697b3cc685b;
+}
+- genTime = 1.28.2016::10:30:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "securityPattern.sbs";
+	- _subsystem = "securityPattern";
+	- _class = "";
+	- _name = "Rights";
+	- _id = GUID 2c740cfe-0ed5-4809-88c7-61511071d4d1;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "sysSCADA.sbs";
+	- _subsystem = "sysSCADA";
+	- _class = "";
+	- _name = "HMI";
+	- _id = GUID 5c1d7220-266c-42ad-b7f9-31d28d2525be;
+}
+- genTime = 1.28.2016::10:30:17;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "securityPattern.sbs";
+	- _subsystem = "securityPattern";
+	- _class = "";
+	- _name = "SingleAccessPoint";
+	- _id = GUID dcc4fc5b-3188-4edb-8480-4065bbe4d003;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "sysSCADA.sbs";
+	- _subsystem = "sysSCADA";
+	- _class = "";
+	- _name = "FieldUnit";
+	- _id = GUID 8324192e-36e4-4659-a7bf-2e236c1a6737;
+}
+- genTime = 1.28.2016::10:36:26;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = "secureSCADA.sbs";
+	- _subsystem = "secureSCADA";
+	- _class = "";
+	- _name = "CCOwner";
+	- _id = GUID 100b8214-acf7-4b21-beb6-0c312d0db340;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = "secureSCADA.sbs";
+	- _subsystem = "secureSCADA";
+	- _class = "";
+	- _name = "Administrator";
+	- _id = GUID 3a0f439e-6e3f-4e19-8394-c897922b3427;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "sysSCADA.sbs";
+	- _subsystem = "sysSCADA";
+	- _class = "";
+	- _name = "commNetwork";
+	- _id = GUID 7abdc82a-8a4b-403b-98ab-a1075058bf97;
+}
+- genTime = 1.28.2016::10:30:17;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = "sysSCADA.sbs";
+	- _subsystem = "sysSCADA";
+	- _class = "";
+	- _name = "user";
+	- _id = GUID f11a21ce-9880-4120-82d2-e6fcc5b4e3f3;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "sysSCADA.sbs";
+	- _subsystem = "sysSCADA";
+	- _class = "";
+	- _name = "dataServer";
+	- _id = GUID 008a91e6-b693-41a8-87d5-4f9349470c63;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "IActor";
+	- _filename = "secureSCADA.sbs";
+	- _subsystem = "secureSCADA";
+	- _class = "";
+	- _name = "Unknown";
+	- _id = GUID c798c9cd-019a-47d6-8d1a-83d0f93ef442;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "securityPattern.sbs";
+	- _subsystem = "securityPattern";
+	- _class = "";
+	- _name = "checkPoint";
+	- _id = GUID 3e709bfb-491c-4ac1-b882-76d6a6f74b15;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "securityPattern.sbs";
+	- _subsystem = "securityPattern";
+	- _class = "";
+	- _name = "SecurityPolicy";
+	- _id = GUID 8082a2c0-bf96-44a5-a774-78b991e1d5c8;
+}
+- genTime = 1.28.2016::10:14:57;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "sysSCADA.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "sysSCADA";
+	- _id = GUID 57f4bc9e-2a59-491f-a48c-8658415066d9;
+}
+- genTime = 1.28.2016::10:36:26;
+- hElement = { IHandle 
+	- _m2Class = "ICodeGenConfigInfo";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\DefaultConfig";
+	- _id = GUID 2397112e-1e18-4c0c-aa75-3feeef34ee6d;
+}
+- genTime = 1.28.2016::10:39:3;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "secureSCADA.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "secureSCADA";
+	- _id = GUID 35bc7620-61ff-4a9f-aec7-b862132fd1ab;
+}
+- genTime = 1.28.2016::10:36:26;
+

@@ -1,0 +1,16 @@
+[Op Calls]
+[Events]
+itsSingleAccessPoint->GEN(approved())`SingleAccessPoint
+itsRights->GEN(rejected())`Rights
+itsSecurityPolicy->GEN(approved())`SecurityPolicy
+itsSingleAccessPoint->GEN(requested())`SingleAccessPoint
+itsSecurityPolicy->GEN(checkPolicy())`SecurityPolicy
+itsRights->GEN(approved())`Rights
+itsSecurityPolicy->GEN(rejected())`SecurityPolicy
+itsCheckPoint->GEN(backService())`checkPoint
+itsCheckPoint->GEN(requested())`checkPoint
+itsCenterController->GEN(request())`centerController
+itsLocalController->GEN(requestService())`LocalController
+itsFieldUnit->GEN(doSomething())`FieldUnit
+itsCenterController->GEN(requestToCenter())`centerController
+[Breakpoints]

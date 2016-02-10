@@ -1,0 +1,12 @@
+I-Logix-RPY-Archive version 8.10.0 * 6930133
+
+- filesTable = { IRPYRawContainer 
+	- size = 5;
+	- value = "archiSecu.rpy" ""
+	"archiSecu_rpy\\DefaultComponent.cmp" "DefaultComponent"
+	"archiSecu_rpy\\secureSCADA.sbs" "secureSCADA"
+	"archiSecu_rpy\\securityPattern.sbs" "securityPattern"
+	"archiSecu_rpy\\sysSCADA.sbs" "sysSCADA"
+	
+}
+
