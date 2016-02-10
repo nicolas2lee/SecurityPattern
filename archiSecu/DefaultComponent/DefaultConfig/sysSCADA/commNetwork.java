@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.1.1
-	Login		: zhengta
+	Login		: guoxi
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: commNetwork
-//!	Generated Date	: Thu, 28, Jan 2016 
+//!	Generated Date	: Wed, 10, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/sysSCADA/commNetwork.java
 *********************************************************************/
 
@@ -751,12 +751,12 @@ public class commNetwork implements RiJStateConcept, Animated {
     /**  see com.ibm.rational.rhapsody.animation.Animated interface */
     public void addRelations(AnimRelations msg) {
         
-        msg.add("itsCenterController", false, true, itsCenterController);
-        msg.add("itsFieldUnit", false, true, itsFieldUnit);
         msg.add("itsSingleAccessPoint", true, true, itsSingleAccessPoint);
         msg.add("itsCheckPoint", true, true, itsCheckPoint);
         msg.add("itsRights", true, true, itsRights);
         msg.add("itsSecurityPolicy", true, true, itsSecurityPolicy);
+        msg.add("itsCenterController", false, true, itsCenterController);
+        msg.add("itsFieldUnit", false, true, itsFieldUnit);
     }
     /** An inner class added as instrumentation for animation */
     public class Animate extends AnimInstance { 

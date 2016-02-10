@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.1.1
-	Login		: zhengta
+	Login		: guoxi
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: interactHMI
-//!	Generated Date	: Fri, 8, Jan 2016 
+//!	Generated Date	: Wed, 10, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/sysSCADA/interactHMI.java
 *********************************************************************/
 

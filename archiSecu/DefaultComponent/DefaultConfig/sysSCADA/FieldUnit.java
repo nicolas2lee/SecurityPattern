@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.1.1
-	Login		: zhengta
+	Login		: guoxi
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: FieldUnit
-//!	Generated Date	: Thu, 28, Jan 2016 
+//!	Generated Date	: Wed, 10, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/sysSCADA/FieldUnit.java
 *********************************************************************/
 
@@ -1007,15 +1007,15 @@ public class FieldUnit implements RiJStateConcept, Animated {
     /**  see com.ibm.rational.rhapsody.animation.Animated interface */
     public void addRelations(AnimRelations msg) {
         
-        msg.add("itsLocalController", true, true, itsLocalController);
-        msg.add("itsCommNetwork", false, true, itsCommNetwork);
-        msg.add("itsFieldService", true, true, itsFieldService);
         msg.add("itsFieldService_0", true, true, itsFieldService_0);
         msg.add("itsLocalController_0", true, true, itsLocalController_0);
         msg.add("itsSingleAccessPoint", true, true, itsSingleAccessPoint);
         msg.add("itsCheckPoint", true, true, itsCheckPoint);
         msg.add("itsRights", true, true, itsRights);
         msg.add("itsSecurityPolicy", true, true, itsSecurityPolicy);
+        msg.add("itsLocalController", true, true, itsLocalController);
+        msg.add("itsCommNetwork", false, true, itsCommNetwork);
+        msg.add("itsFieldService", true, true, itsFieldService);
     }
     /** An inner class added as instrumentation for animation */
     public class Animate extends AnimInstance { 

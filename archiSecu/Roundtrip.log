@@ -1,0 +1,18 @@
+
+Reverse Engineering Done.
+
+Removing Object 'itsHMI' from Package 'sysSCADA'. 
+Removing Object 'itsDataServer' from Package 'sysSCADA'. 
+Removing Object 'itsCenterController' from Package 'sysSCADA'. 
+Removing Object 'itsCommNetwork' from Package 'sysSCADA'. 
+Removing Object 'itsFieldUnit' from Package 'sysSCADA'. 
+Removing Object 'itsLocalController' from Package 'sysSCADA'. 
+Removing Object 'itsFieldService' from Package 'sysSCADA'. 
+Removing Object 'itsSecurityPolicy' from Package 'securityPattern'. 
+Removing Object 'itsRights' from Package 'securityPattern'. 
+Removing Object 'itsCounterMeasure' from Package 'securityPattern'. 
+Removing Object 'itsSingleAccessPoint' from Package 'securityPattern'. 
+Removing Object 'itsCheckPoint' from Package 'securityPattern'. 
+Removing Object 'itsCenterController' from Package 'secureSCADA'. 
+Removing Object 'itsCommNetwork' from Package 'secureSCADA'. 
+Removing Object 'itsFieldUnit' from Package 'secureSCADA'. 

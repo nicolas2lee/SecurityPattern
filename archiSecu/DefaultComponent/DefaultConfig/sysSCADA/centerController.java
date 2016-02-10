@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 8.1.1
-	Login		: zhengta
+	Login		: guoxi
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: centerController
-//!	Generated Date	: Thu, 28, Jan 2016 
+//!	Generated Date	: Wed, 10, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/sysSCADA/centerController.java
 *********************************************************************/
 
@@ -1198,10 +1198,6 @@ public class centerController implements RiJStateConcept, Animated {
     /**  see com.ibm.rational.rhapsody.animation.Animated interface */
     public void addRelations(AnimRelations msg) {
         
-        msg.add("itsHMI", true, true, itsHMI);
-        msg.add("itsDataServer", true, true, itsDataServer);
-        msg.add("itsCommNetwork", false, true, itsCommNetwork);
-        msg.add("itsUser", false, true, itsUser);
         msg.add("itsCheckPoint", true, true, itsCheckPoint);
         msg.add("itsSecurityPolicy", true, true, itsSecurityPolicy);
         msg.add("itsSingleAccessPoint_1_0", true, true, itsSingleAccessPoint_1_0);
@@ -1210,6 +1206,10 @@ public class centerController implements RiJStateConcept, Animated {
         msg.add("itsSecurityPolicy_0", true, true, itsSecurityPolicy_0);
         msg.add("itsDataServer_1", true, true, itsDataServer_1);
         msg.add("itsHMI_2", true, true, itsHMI_2);
+        msg.add("itsHMI", true, true, itsHMI);
+        msg.add("itsDataServer", true, true, itsDataServer);
+        msg.add("itsCommNetwork", false, true, itsCommNetwork);
+        msg.add("itsUser", false, true, itsUser);
     }
     /** An inner class added as instrumentation for animation */
     public class Animate extends AnimInstance { 

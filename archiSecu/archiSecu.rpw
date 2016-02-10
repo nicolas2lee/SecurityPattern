@@ -5,7 +5,7 @@ I-Logix-RPY-Archive version 8.10.0 * 6930133
 	}
 	- isLoadOnDemand = 0;
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 7;
+		- size = 6;
 		- value = 
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -16,52 +16,24 @@ I-Logix-RPY-Archive version 8.10.0 * 6930133
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
 				- m_ptMaxPositionY = -31;
-				- m_nLeft = 104;
-				- m_nTop = 104;
-				- m_nRight = 905;
-				- m_nBottom = 428;
+				- m_nLeft = 78;
+				- m_nTop = 78;
+				- m_nRight = 674;
+				- m_nBottom = 594;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
-				- _m2Class = "IMSC";
-				- _filename = "secureSCADA.sbs";
-				- _subsystem = "secureSCADA";
-				- _class = "";
-				- _name = "SeqDiagSecureSCADA";
-				- _id = GUID 7b6ee71c-0cdb-4420-81b4-f0700c1dac57;
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "sysSCADA.sbs";
+				- _subsystem = "sysSCADA";
+				- _class = "FieldUnit";
+				- _name = "StatechartDiagram";
+				- _id = GUID b894a433-f3f7-48bb-ad4e-18533f161930;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 764 244 ;
+			- _DownRight = 559 456 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 3;
-		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -31;
-				- m_nLeft = 0;
-				- m_nTop = 0;
-				- m_nRight = 801;
-				- m_nBottom = 324;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IDiagram";
-				- _filename = "secureSCADA.sbs";
-				- _subsystem = "secureSCADA";
-				- _class = "";
-				- _name = "objectmodeldiagram_17";
-				- _id = GUID 000c1c42-a6ea-45fc-9691-a2751e055f91;
-			}
-			- _UpLeft = 0 30 ;
-			- _DownRight = 764 294 ;
-			- _instanceName = "";
-			- m_nDiagramIndex = 1;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -72,80 +44,24 @@ I-Logix-RPY-Archive version 8.10.0 * 6930133
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
 				- m_ptMaxPositionY = -31;
-				- m_nLeft = 182;
-				- m_nTop = 182;
-				- m_nRight = 916;
-				- m_nBottom = 583;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IDiagram";
-				- _filename = "secureSCADA.sbs";
-				- _subsystem = "secureSCADA";
-				- _class = "";
-				- _name = "secureSCADA";
-				- _id = GUID 6fc60a5f-5a6a-4fb7-86a3-a2cc359313d8;
-			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 895 403 ;
-			- _instanceName = "";
-			- m_nDiagramIndex = 0;
-		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -31;
-				- m_nLeft = 52;
-				- m_nTop = 52;
-				- m_nRight = 853;
-				- m_nBottom = 376;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IStructureDiagram";
-				- _filename = "secureSCADA.sbs";
-				- _subsystem = "secureSCADA";
-				- _class = "";
-				- _name = "structurediagram_Field";
-				- _id = GUID f5f18895-8bba-4233-b718-bf12b0608d5e;
-			}
-			- _UpLeft = -47 70 ;
-			- _DownRight = 717 334 ;
-			- _instanceName = "";
-			- m_nDiagramIndex = 4;
-		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -31;
 				- m_nLeft = 104;
 				- m_nTop = 104;
-				- m_nRight = 901;
-				- m_nBottom = 447;
+				- m_nRight = 700;
+				- m_nBottom = 620;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
-				- _m2Class = "IStructureDiagram";
-				- _filename = "secureSCADA.sbs";
-				- _subsystem = "secureSCADA";
-				- _class = "";
-				- _name = "structurediagram_center";
-				- _id = GUID 3ed30d0c-42dc-42ff-b1b2-75316bf53db8;
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "sysSCADA.sbs";
+				- _subsystem = "sysSCADA";
+				- _class = "HMI";
+				- _name = "StatechartDiagram";
+				- _id = GUID 6f920f85-767a-4425-9b46-2157d685d630;
 			}
-			- _UpLeft = 0 20 ;
-			- _DownRight = 760 303 ;
+			- _UpLeft = 0 80 ;
+			- _DownRight = 795 809 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 6;
+			- m_nDiagramIndex = 2;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -158,20 +74,48 @@ I-Logix-RPY-Archive version 8.10.0 * 6930133
 				- m_ptMaxPositionY = -31;
 				- m_nLeft = 130;
 				- m_nTop = 130;
-				- m_nRight = 931;
-				- m_nBottom = 454;
+				- m_nRight = 623;
+				- m_nBottom = 646;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
 				- _m2Class = "IStructureDiagram";
-				- _filename = "secureSCADA.sbs";
-				- _subsystem = "secureSCADA";
-				- _class = "";
-				- _name = "structurediagram_commuNet";
-				- _id = GUID 1dfa0598-69f5-4ba3-b2ed-d1dfd29250bf;
+				- _filename = "sysSCADA.sbs";
+				- _subsystem = "sysSCADA";
+				- _class = "centerController";
+				- _name = "centerControllerSturct";
+				- _id = GUID 48227c4e-bb72-417e-a9fd-f9c72669db86;
 			}
-			- _UpLeft = 0 20 ;
-			- _DownRight = 764 284 ;
+			- _UpLeft = 15 0 ;
+			- _DownRight = 471 456 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 1;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 0;
+				- m_nTop = 0;
+				- m_nRight = 592;
+				- m_nBottom = 535;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "sysSCADA.sbs";
+				- _subsystem = "sysSCADA";
+				- _class = "centerController";
+				- _name = "StatechartDiagram";
+				- _id = GUID 51458e10-f7e2-4468-9c22-55911d21322c;
+			}
+			- _UpLeft = 301 10 ;
+			- _DownRight = 856 485 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 5;
 		}
@@ -184,27 +128,55 @@ I-Logix-RPY-Archive version 8.10.0 * 6930133
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
 				- m_ptMaxPositionY = -31;
-				- m_nLeft = 156;
-				- m_nTop = 156;
-				- m_nRight = 957;
-				- m_nBottom = 480;
+				- m_nLeft = 52;
+				- m_nTop = 52;
+				- m_nRight = 648;
+				- m_nBottom = 568;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
-				- _m2Class = "IStructureDiagram";
-				- _filename = "secureSCADA.sbs";
-				- _subsystem = "secureSCADA";
-				- _class = "";
-				- _name = "structurediagram_secureALL";
-				- _id = GUID 87bfe764-1a96-4e29-82d0-a670423f1f13;
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "sysSCADA.sbs";
+				- _subsystem = "sysSCADA";
+				- _class = "commNetwork";
+				- _name = "StatechartDiagram";
+				- _id = GUID d25cf8c9-0fe9-43d5-a697-1d2543dbaf75;
 			}
-			- _UpLeft = 0 60 ;
-			- _DownRight = 764 324 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 559 456 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 2;
+			- m_nDiagramIndex = 4;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 156;
+				- m_nTop = 156;
+				- m_nRight = 738;
+				- m_nBottom = 672;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "sysSCADA.sbs";
+				- _subsystem = "sysSCADA";
+				- _class = "dataServer";
+				- _name = "StatechartDiagram";
+				- _id = GUID a55efcda-3f49-4f2f-8f55-2fd5e356cc8f;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 545 456 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
 		}
 	}
-	- _fullName = "U:\\semestre5\\uv5.6\\archiSecu\\archiSecu";
+	- _fullName = "U:\\semestre5\\uv5.6\\SecurityPattern\\archiSecu\\archiSecu";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
 	}
