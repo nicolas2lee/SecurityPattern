@@ -4,7 +4,7 @@
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: offerService
-//!	Generated Date	: Wed, 10, Feb 2016 
+//!	Generated Date	: Wed, 17, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/sysSCADA/offerService.java
 *********************************************************************/
 
@@ -27,7 +27,7 @@ import com.ibm.rational.rhapsody.animcom.animMessages.*;
 //## event offerService() 
 public class offerService extends RiJEvent implements AnimatedEvent {
     
-    public static final int offerService_sysSCADA_id = 18631;		//## ignore 
+    public static final int offerService_sysSCADA_id = 18628;		//## ignore 
     
     
     // Constructors

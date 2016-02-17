@@ -4,7 +4,7 @@
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: SingleAccessPoint
-//!	Generated Date	: Wed, 10, Feb 2016 
+//!	Generated Date	: Wed, 17, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/securityPattern/SingleAccessPoint.java
 *********************************************************************/
 
@@ -41,6 +41,10 @@ public class SingleAccessPoint implements RiJStateConcept, Animated {
     protected SingleAccessPoint.p_single_user_C p_single_user;		//## ignore 
     
     protected SingleAccessPoint.p_single_check_C p_single_check;		//## ignore 
+    
+    protected SingleAccessPoint.p_backSingle_HMI_C p_backSingle_HMI;		//## ignore 
+    
+    protected SingleAccessPoint.p_single_backCheck_C p_single_backCheck;		//## ignore 
     
     protected int judgeRole;		//## attribute judgeRole 
     
@@ -174,6 +178,48 @@ public class SingleAccessPoint implements RiJStateConcept, Animated {
         p_single_check=null;
     }
     
+    //## auto_generated 
+    public SingleAccessPoint.p_backSingle_HMI_C getP_backSingle_HMI() {
+        return p_backSingle_HMI;
+    }
+    
+    //## auto_generated 
+    public SingleAccessPoint.p_backSingle_HMI_C get_p_backSingle_HMI() {
+        return p_backSingle_HMI;
+    }
+    
+    //## auto_generated 
+    public SingleAccessPoint.p_backSingle_HMI_C newP_backSingle_HMI() {
+        p_backSingle_HMI = new SingleAccessPoint.p_backSingle_HMI_C();
+        return p_backSingle_HMI;
+    }
+    
+    //## auto_generated 
+    public void deleteP_backSingle_HMI() {
+        p_backSingle_HMI=null;
+    }
+    
+    //## auto_generated 
+    public SingleAccessPoint.p_single_backCheck_C getP_single_backCheck() {
+        return p_single_backCheck;
+    }
+    
+    //## auto_generated 
+    public SingleAccessPoint.p_single_backCheck_C get_p_single_backCheck() {
+        return p_single_backCheck;
+    }
+    
+    //## auto_generated 
+    public SingleAccessPoint.p_single_backCheck_C newP_single_backCheck() {
+        p_single_backCheck = new SingleAccessPoint.p_single_backCheck_C();
+        return p_single_backCheck;
+    }
+    
+    //## auto_generated 
+    public void deleteP_single_backCheck() {
+        p_single_backCheck=null;
+    }
+    
     //## TriggeredOperation request() 
     public void request() {
         try {
@@ -305,10 +351,16 @@ public class SingleAccessPoint implements RiJStateConcept, Animated {
     protected void initRelations(RiJThread p_thread) {
         p_single_user = newP_single_user();
         p_single_check = newP_single_check();
+        p_backSingle_HMI = newP_backSingle_HMI();
+        p_single_backCheck = newP_single_backCheck();
         if(getP_single_user() != null)
            getP_single_user().connectSingleAccessPoint(this);
         if(getP_single_check() != null)
            getP_single_check().connectSingleAccessPoint(this);
+        if(getP_backSingle_HMI() != null)
+           getP_backSingle_HMI().connectSingleAccessPoint(this);
+        if(getP_single_backCheck() != null)
+           getP_single_backCheck().connectSingleAccessPoint(this);
     }
     
     //## auto_generated 
@@ -761,6 +813,60 @@ public class SingleAccessPoint implements RiJStateConcept, Animated {
         
         //## auto_generated 
         public  p_single_check_C() {
+        }
+        
+        /**
+         * @param part
+        */
+        //## operation connectSingleAccessPoint(SingleAccessPoint) 
+        public void connectSingleAccessPoint(SingleAccessPoint part) {
+            //#[ operation connectSingleAccessPoint(SingleAccessPoint) 
+            InBound.setItsDefaultProvidedInterface(part);
+            InBound.setPort(this); // for IS_PORT macro support
+            
+            //#]
+        }
+        
+    }
+    /**
+    [[ * @see $See]]
+    [[ * @since $Since]]
+    */
+    //## ignore 
+    public class p_backSingle_HMI_C extends RiJDefaultReactivePort {
+        
+        
+        // Constructors
+        
+        //## auto_generated 
+        public  p_backSingle_HMI_C() {
+        }
+        
+        /**
+         * @param part
+        */
+        //## operation connectSingleAccessPoint(SingleAccessPoint) 
+        public void connectSingleAccessPoint(SingleAccessPoint part) {
+            //#[ operation connectSingleAccessPoint(SingleAccessPoint) 
+            InBound.setItsDefaultProvidedInterface(part);
+            InBound.setPort(this); // for IS_PORT macro support
+            
+            //#]
+        }
+        
+    }
+    /**
+    [[ * @see $See]]
+    [[ * @since $Since]]
+    */
+    //## ignore 
+    public class p_single_backCheck_C extends RiJDefaultReactivePort {
+        
+        
+        // Constructors
+        
+        //## auto_generated 
+        public  p_single_backCheck_C() {
         }
         
         /**

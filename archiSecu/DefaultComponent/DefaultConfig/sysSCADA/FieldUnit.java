@@ -4,7 +4,7 @@
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: FieldUnit
-//!	Generated Date	: Wed, 10, Feb 2016 
+//!	Generated Date	: Wed, 17, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/sysSCADA/FieldUnit.java
 *********************************************************************/
 
@@ -46,13 +46,17 @@ public class FieldUnit implements RiJStateConcept, Animated {
     
     public Reactive reactive;		//## ignore 
     
-    protected FieldUnit.p_field_net_C p_field_net;		//## ignore 
-    
     protected FieldUnit.p_field_ser_C p_field_ser;		//## ignore 
     
     protected FieldUnit.p_field_con_C p_field_con;		//## ignore 
     
+    protected FieldUnit.p_field_innet_C p_field_innet;		//## ignore 
+    
+    protected FieldUnit.p_field_outnet_C p_field_outnet;		//## ignore 
+    
     protected checkPoint itsCheckPoint;		//## classInstance itsCheckPoint 
+    
+    protected checkPoint itsCheckPoint_0;		//## classInstance itsCheckPoint_0 
     
     protected commNetwork itsCommNetwork;		//## link itsCommNetwork 
     
@@ -60,21 +64,35 @@ public class FieldUnit implements RiJStateConcept, Animated {
     
     protected FieldService itsFieldService_0;		//## classInstance itsFieldService_0 
     
+    protected FieldService itsFieldService_1;		//## classInstance itsFieldService_1 
+    
     protected LocalController itsLocalController;		//## link itsLocalController 
     
     protected LocalController itsLocalController_0;		//## classInstance itsLocalController_0 
     
+    protected LocalController itsLocalController_1;		//## classInstance itsLocalController_1 
+    
     protected Rights itsRights;		//## classInstance itsRights 
+    
+    protected Rights itsRights_0;		//## classInstance itsRights_0 
     
     protected SecurityPolicy itsSecurityPolicy;		//## classInstance itsSecurityPolicy 
     
+    protected SecurityPolicy itsSecurityPolicy_0;		//## classInstance itsSecurityPolicy_0 
+    
     protected SingleAccessPoint itsSingleAccessPoint;		//## classInstance itsSingleAccessPoint 
+    
+    protected SingleAccessPoint itsSingleAccessPoint_0;		//## classInstance itsSingleAccessPoint_0 
     
     //#[ ignore 
     public static final int RiJNonState=0;
-    public static final int requestedLocController=1;
-    public static final int recievedFromCenter=2;
-    public static final int Idle=3;
+    public static final int recievedFromCenter=1;
+    public static final int Idle=2;
+    public static final int EnterEspaceField=3;
+    public static final int distributedFieldService=4;
+    public static final int checkedRightsField=5;
+    public static final int checkedPolicyField=6;
+    public static final int checkedPointField=7;
     //#]
     protected int rootState_subState;		//## ignore 
     
@@ -150,27 +168,6 @@ public class FieldUnit implements RiJStateConcept, Animated {
     }
     
     //## auto_generated 
-    public FieldUnit.p_field_net_C getP_field_net() {
-        return p_field_net;
-    }
-    
-    //## auto_generated 
-    public FieldUnit.p_field_net_C get_p_field_net() {
-        return p_field_net;
-    }
-    
-    //## auto_generated 
-    public FieldUnit.p_field_net_C newP_field_net() {
-        p_field_net = new FieldUnit.p_field_net_C();
-        return p_field_net;
-    }
-    
-    //## auto_generated 
-    public void deleteP_field_net() {
-        p_field_net=null;
-    }
-    
-    //## auto_generated 
     public FieldUnit.p_field_ser_C getP_field_ser() {
         return p_field_ser;
     }
@@ -210,6 +207,48 @@ public class FieldUnit implements RiJStateConcept, Animated {
     //## auto_generated 
     public void deleteP_field_con() {
         p_field_con=null;
+    }
+    
+    //## auto_generated 
+    public FieldUnit.p_field_innet_C getP_field_innet() {
+        return p_field_innet;
+    }
+    
+    //## auto_generated 
+    public FieldUnit.p_field_innet_C get_p_field_innet() {
+        return p_field_innet;
+    }
+    
+    //## auto_generated 
+    public FieldUnit.p_field_innet_C newP_field_innet() {
+        p_field_innet = new FieldUnit.p_field_innet_C();
+        return p_field_innet;
+    }
+    
+    //## auto_generated 
+    public void deleteP_field_innet() {
+        p_field_innet=null;
+    }
+    
+    //## auto_generated 
+    public FieldUnit.p_field_outnet_C getP_field_outnet() {
+        return p_field_outnet;
+    }
+    
+    //## auto_generated 
+    public FieldUnit.p_field_outnet_C get_p_field_outnet() {
+        return p_field_outnet;
+    }
+    
+    //## auto_generated 
+    public FieldUnit.p_field_outnet_C newP_field_outnet() {
+        p_field_outnet = new FieldUnit.p_field_outnet_C();
+        return p_field_outnet;
+    }
+    
+    //## auto_generated 
+    public void deleteP_field_outnet() {
+        p_field_outnet=null;
     }
     
     //## operation requestFieldService() 
@@ -271,7 +310,7 @@ public class FieldUnit implements RiJStateConcept, Animated {
                });
         
         //#[ operation sendRequestLocController() 
-        getP_field_con().gen(new requestService());
+        getP_check_protected().gen(new requestService());
         //#]
         }
         finally {
@@ -296,6 +335,24 @@ public class FieldUnit implements RiJStateConcept, Animated {
     public void deleteItsCheckPoint() {
         animInstance().notifyRelationRemoved("itsCheckPoint", itsCheckPoint);
         itsCheckPoint=null;
+    }
+    
+    //## auto_generated 
+    public checkPoint getItsCheckPoint_0() {
+        return itsCheckPoint_0;
+    }
+    
+    //## auto_generated 
+    public checkPoint newItsCheckPoint_0(RiJThread p_thread) {
+        itsCheckPoint_0 = new checkPoint(p_thread);
+        animInstance().notifyRelationAdded("itsCheckPoint_0", itsCheckPoint_0);
+        return itsCheckPoint_0;
+    }
+    
+    //## auto_generated 
+    public void deleteItsCheckPoint_0() {
+        animInstance().notifyRelationRemoved("itsCheckPoint_0", itsCheckPoint_0);
+        itsCheckPoint_0=null;
     }
     
     //## auto_generated 
@@ -401,6 +458,24 @@ public class FieldUnit implements RiJStateConcept, Animated {
     }
     
     //## auto_generated 
+    public FieldService getItsFieldService_1() {
+        return itsFieldService_1;
+    }
+    
+    //## auto_generated 
+    public FieldService newItsFieldService_1(RiJThread p_thread) {
+        itsFieldService_1 = new FieldService(p_thread);
+        animInstance().notifyRelationAdded("itsFieldService_1", itsFieldService_1);
+        return itsFieldService_1;
+    }
+    
+    //## auto_generated 
+    public void deleteItsFieldService_1() {
+        animInstance().notifyRelationRemoved("itsFieldService_1", itsFieldService_1);
+        itsFieldService_1=null;
+    }
+    
+    //## auto_generated 
     public LocalController getItsLocalController() {
         return itsLocalController;
     }
@@ -461,6 +536,24 @@ public class FieldUnit implements RiJStateConcept, Animated {
     }
     
     //## auto_generated 
+    public LocalController getItsLocalController_1() {
+        return itsLocalController_1;
+    }
+    
+    //## auto_generated 
+    public LocalController newItsLocalController_1(RiJThread p_thread) {
+        itsLocalController_1 = new LocalController(p_thread);
+        animInstance().notifyRelationAdded("itsLocalController_1", itsLocalController_1);
+        return itsLocalController_1;
+    }
+    
+    //## auto_generated 
+    public void deleteItsLocalController_1() {
+        animInstance().notifyRelationRemoved("itsLocalController_1", itsLocalController_1);
+        itsLocalController_1=null;
+    }
+    
+    //## auto_generated 
     public Rights getItsRights() {
         return itsRights;
     }
@@ -476,6 +569,24 @@ public class FieldUnit implements RiJStateConcept, Animated {
     public void deleteItsRights() {
         animInstance().notifyRelationRemoved("itsRights", itsRights);
         itsRights=null;
+    }
+    
+    //## auto_generated 
+    public Rights getItsRights_0() {
+        return itsRights_0;
+    }
+    
+    //## auto_generated 
+    public Rights newItsRights_0(RiJThread p_thread) {
+        itsRights_0 = new Rights(p_thread);
+        animInstance().notifyRelationAdded("itsRights_0", itsRights_0);
+        return itsRights_0;
+    }
+    
+    //## auto_generated 
+    public void deleteItsRights_0() {
+        animInstance().notifyRelationRemoved("itsRights_0", itsRights_0);
+        itsRights_0=null;
     }
     
     //## auto_generated 
@@ -497,6 +608,24 @@ public class FieldUnit implements RiJStateConcept, Animated {
     }
     
     //## auto_generated 
+    public SecurityPolicy getItsSecurityPolicy_0() {
+        return itsSecurityPolicy_0;
+    }
+    
+    //## auto_generated 
+    public SecurityPolicy newItsSecurityPolicy_0(RiJThread p_thread) {
+        itsSecurityPolicy_0 = new SecurityPolicy(p_thread);
+        animInstance().notifyRelationAdded("itsSecurityPolicy_0", itsSecurityPolicy_0);
+        return itsSecurityPolicy_0;
+    }
+    
+    //## auto_generated 
+    public void deleteItsSecurityPolicy_0() {
+        animInstance().notifyRelationRemoved("itsSecurityPolicy_0", itsSecurityPolicy_0);
+        itsSecurityPolicy_0=null;
+    }
+    
+    //## auto_generated 
     public SingleAccessPoint getItsSingleAccessPoint() {
         return itsSingleAccessPoint;
     }
@@ -515,18 +644,43 @@ public class FieldUnit implements RiJStateConcept, Animated {
     }
     
     //## auto_generated 
+    public SingleAccessPoint getItsSingleAccessPoint_0() {
+        return itsSingleAccessPoint_0;
+    }
+    
+    //## auto_generated 
+    public SingleAccessPoint newItsSingleAccessPoint_0(RiJThread p_thread) {
+        itsSingleAccessPoint_0 = new SingleAccessPoint(p_thread);
+        animInstance().notifyRelationAdded("itsSingleAccessPoint_0", itsSingleAccessPoint_0);
+        return itsSingleAccessPoint_0;
+    }
+    
+    //## auto_generated 
+    public void deleteItsSingleAccessPoint_0() {
+        animInstance().notifyRelationRemoved("itsSingleAccessPoint_0", itsSingleAccessPoint_0);
+        itsSingleAccessPoint_0=null;
+    }
+    
+    //## auto_generated 
     protected void initRelations(RiJThread p_thread) {
-        p_field_net = newP_field_net();
         p_field_ser = newP_field_ser();
         p_field_con = newP_field_con();
+        p_field_innet = newP_field_innet();
+        p_field_outnet = newP_field_outnet();
         itsCheckPoint = newItsCheckPoint(p_thread);
+        itsCheckPoint_0 = newItsCheckPoint_0(p_thread);
         itsFieldService = newItsFieldService(p_thread);
         itsFieldService_0 = newItsFieldService_0(p_thread);
+        itsFieldService_1 = newItsFieldService_1(p_thread);
         itsLocalController = newItsLocalController(p_thread);
         itsLocalController_0 = newItsLocalController_0(p_thread);
+        itsLocalController_1 = newItsLocalController_1(p_thread);
         itsRights = newItsRights(p_thread);
+        itsRights_0 = newItsRights_0(p_thread);
         itsSecurityPolicy = newItsSecurityPolicy(p_thread);
+        itsSecurityPolicy_0 = newItsSecurityPolicy_0(p_thread);
         itsSingleAccessPoint = newItsSingleAccessPoint(p_thread);
+        itsSingleAccessPoint_0 = newItsSingleAccessPoint_0(p_thread);
         {
             
             itsSingleAccessPoint.getP_single_check().setItsDefaultRequiredInterface(itsCheckPoint.getP_check_single().getItsDefaultProvidedInterface());
@@ -556,29 +710,83 @@ public class FieldUnit implements RiJStateConcept, Animated {
         }
         {
             
-            getP_field_net().setItsDefaultProvidedInterface(itsSingleAccessPoint.getP_single_user().getItsDefaultProvidedInterface());
+            getP_field_con().setItsDefaultProvidedInterface(itsLocalController_0.getP_loccon_ser().getItsDefaultProvidedInterface());
             
         }{
             
-            itsSingleAccessPoint.getP_single_user().setItsDefaultRequiredInterface(getP_field_net().getItsDefaultRequiredInterface());
+            itsLocalController_0.getP_loccon_ser().setItsDefaultRequiredInterface(getP_field_con().getItsDefaultRequiredInterface());
             
         }
         {
             
-            getP_field_con().setItsDefaultProvidedInterface(itsLocalController_0.getP_con_field().getItsDefaultProvidedInterface());
+            itsLocalController_0.getP_loccon_check().setItsDefaultRequiredInterface(itsCheckPoint.getP_check_protected().getItsDefaultProvidedInterface());
             
         }{
             
-            itsLocalController_0.getP_con_field().setItsDefaultRequiredInterface(getP_field_con().getItsDefaultRequiredInterface());
+            itsCheckPoint.getP_check_protected().setItsDefaultRequiredInterface(itsLocalController_0.getP_loccon_check().getItsDefaultProvidedInterface());
             
         }
         {
             
-            itsLocalController_0.getP_con_check().setItsDefaultRequiredInterface(itsCheckPoint.getP_check_protected().getItsDefaultProvidedInterface());
+            itsSingleAccessPoint_0.getP_single_check().setItsDefaultRequiredInterface(itsCheckPoint_0.getP_check_single().getItsDefaultProvidedInterface());
             
         }{
             
-            itsCheckPoint.getP_check_protected().setItsDefaultRequiredInterface(itsLocalController_0.getP_con_check().getItsDefaultProvidedInterface());
+            itsCheckPoint_0.getP_check_single().setItsDefaultRequiredInterface(itsSingleAccessPoint_0.getP_single_check().getItsDefaultProvidedInterface());
+            
+        }
+        {
+            
+            itsCheckPoint_0.getP_check_right().setItsDefaultRequiredInterface(itsRights_0.getP_right_check().getItsDefaultProvidedInterface());
+            
+        }{
+            
+            itsRights_0.getP_right_check().setItsDefaultRequiredInterface(itsCheckPoint_0.getP_check_right().getItsDefaultProvidedInterface());
+            
+        }
+        {
+            
+            itsCheckPoint_0.getP_check_policy().setItsDefaultRequiredInterface(itsSecurityPolicy_0.getP_policy_check().getItsDefaultProvidedInterface());
+            
+        }{
+            
+            itsSecurityPolicy_0.getP_policy_check().setItsDefaultRequiredInterface(itsCheckPoint_0.getP_check_policy().getItsDefaultProvidedInterface());
+            
+        }
+        {
+            
+            itsCheckPoint_0.getP_check_protected().setItsDefaultRequiredInterface(itsLocalController_1.getP_loccon_check().getItsDefaultProvidedInterface());
+            
+        }{
+            
+            itsLocalController_1.getP_loccon_check().setItsDefaultRequiredInterface(itsCheckPoint_0.getP_check_protected().getItsDefaultProvidedInterface());
+            
+        }
+        {
+            
+            itsLocalController_1.getP_loccon_ser().setItsDefaultRequiredInterface(itsFieldService_1.getP_ser_loccon().getItsDefaultProvidedInterface());
+            
+        }{
+            
+            itsFieldService_1.getP_ser_loccon().setItsDefaultRequiredInterface(itsLocalController_1.getP_loccon_ser().getItsDefaultProvidedInterface());
+            
+        }
+        {
+            
+            getP_field_innet().setItsDefaultProvidedInterface(itsSingleAccessPoint_0.getP_single_user().getItsDefaultProvidedInterface());
+            
+        }{
+            
+            itsSingleAccessPoint_0.getP_single_user().setItsDefaultRequiredInterface(getP_field_innet().getItsDefaultRequiredInterface());
+            
+        }
+        {
+            
+            getP_field_outnet().setItsDefaultProvidedInterface(itsFieldService_1.getP_ser_outnet().getItsDefaultProvidedInterface());
+            
+        }{
+            
+            itsFieldService_1.getP_ser_outnet().setItsDefaultRequiredInterface(getP_field_outnet().getItsDefaultRequiredInterface());
             
         }
         if(getP_field_ser() != null)
@@ -589,13 +797,19 @@ public class FieldUnit implements RiJStateConcept, Animated {
     public boolean startBehavior() {
         boolean done = true;
         done &= itsCheckPoint.startBehavior();
+        done &= itsCheckPoint_0.startBehavior();
         done &= itsFieldService.startBehavior();
         done &= itsFieldService_0.startBehavior();
+        done &= itsFieldService_1.startBehavior();
         done &= itsLocalController.startBehavior();
         done &= itsLocalController_0.startBehavior();
+        done &= itsLocalController_1.startBehavior();
         done &= itsRights.startBehavior();
+        done &= itsRights_0.startBehavior();
         done &= itsSecurityPolicy.startBehavior();
+        done &= itsSecurityPolicy_0.startBehavior();
         done &= itsSingleAccessPoint.startBehavior();
+        done &= itsSingleAccessPoint_0.startBehavior();
         done &= reactive.startBehavior();
         return done;
     }
@@ -644,9 +858,29 @@ public class FieldUnit implements RiJStateConcept, Animated {
                     recievedFromCenter_add(animStates);
                 }
                 break;
-                case requestedLocController:
+                case distributedFieldService:
                 {
-                    requestedLocController_add(animStates);
+                    distributedFieldService_add(animStates);
+                }
+                break;
+                case EnterEspaceField:
+                {
+                    EnterEspaceField_add(animStates);
+                }
+                break;
+                case checkedPointField:
+                {
+                    checkedPointField_add(animStates);
+                }
+                break;
+                case checkedPolicyField:
+                {
+                    checkedPolicyField_add(animStates);
+                }
+                break;
+                case checkedRightsField:
+                {
+                    checkedRightsField_add(animStates);
                 }
                 break;
                 default:
@@ -676,20 +910,35 @@ public class FieldUnit implements RiJStateConcept, Animated {
                     res = recievedFromCenter_takeEvent(id);
                 }
                 break;
-                case requestedLocController:
+                case distributedFieldService:
                 {
-                    res = requestedLocController_takeEvent(id);
+                    res = distributedFieldService_takeEvent(id);
+                }
+                break;
+                case EnterEspaceField:
+                {
+                    res = EnterEspaceField_takeEvent(id);
+                }
+                break;
+                case checkedPointField:
+                {
+                    res = checkedPointField_takeEvent(id);
+                }
+                break;
+                case checkedPolicyField:
+                {
+                    res = checkedPolicyField_takeEvent(id);
+                }
+                break;
+                case checkedRightsField:
+                {
+                    res = checkedRightsField_takeEvent(id);
                 }
                 break;
                 default:
                     break;
             }
             return res;
-        }
-        
-        //## statechart_method 
-        public void requestedLocController_add(AnimStates animStates) {
-            animStates.add("ROOT.requestedLocController");
         }
         
         //## statechart_method 
@@ -702,10 +951,116 @@ public class FieldUnit implements RiJStateConcept, Animated {
             animStates.add("ROOT.Idle");
         }
         
+        //## statechart_method 
+        public void EnterEspaceField_add(AnimStates animStates) {
+            animStates.add("ROOT.EnterEspaceField");
+        }
+        
+        //## statechart_method 
+        public void distributedFieldService_add(AnimStates animStates) {
+            animStates.add("ROOT.distributedFieldService");
+        }
+        
+        //## statechart_method 
+        public void checkedRightsField_add(AnimStates animStates) {
+            animStates.add("ROOT.checkedRightsField");
+        }
+        
+        //## statechart_method 
+        public void checkedPolicyField_add(AnimStates animStates) {
+            animStates.add("ROOT.checkedPolicyField");
+        }
+        
+        //## statechart_method 
+        public void checkedPointField_add(AnimStates animStates) {
+            animStates.add("ROOT.checkedPointField");
+        }
+        
         //## auto_generated 
         protected void initStatechart() {
             rootState_subState = RiJNonState;
             rootState_active = RiJNonState;
+        }
+        
+        //## statechart_method 
+        public int checkedPointFieldTakerecieveFromCenterByNet() {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            animInstance().notifyTransitionStarted("1");
+            checkedPointField_exit();
+            //#[ transition 1 
+            sendRequestLocController();
+            //#]
+            recievedFromCenter_entDef();
+            animInstance().notifyTransitionEnded("1");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
+            return res;
+        }
+        
+        //## statechart_method 
+        public void checkedPointFieldEnter() {
+        }
+        
+        //## statechart_method 
+        public int checkedPointFieldTaketoCheckFieldPolicy() {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            animInstance().notifyTransitionStarted("6");
+            checkedPointField_exit();
+            checkedPolicyField_entDef();
+            animInstance().notifyTransitionEnded("6");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
+            return res;
+        }
+        
+        //## statechart_method 
+        public int checkedPolicyField_takeEvent(short id) {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            if(event.isTypeOf(fieldPolicyFeedback.fieldPolicyFeedback_sysSCADA_id))
+                {
+                    res = checkedPolicyFieldTakefieldPolicyFeedback();
+                }
+            
+            return res;
+        }
+        
+        //## statechart_method 
+        public void checkedPolicyFieldEnter() {
+        }
+        
+        //## statechart_method 
+        public int EnterEspaceField_takeEvent(short id) {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            if(event.isTypeOf(checkpointField.checkpointField_sysSCADA_id))
+                {
+                    res = EnterEspaceFieldTakecheckpointField();
+                }
+            
+            return res;
+        }
+        
+        //## statechart_method 
+        public void checkedPointFieldExit() {
+        }
+        
+        //## statechart_method 
+        public void checkedPolicyField_enter() {
+            animInstance().notifyStateEntered("ROOT.checkedPolicyField");
+            rootState_subState = checkedPolicyField;
+            rootState_active = checkedPolicyField;
+            checkedPolicyFieldEnter();
+        }
+        
+        //## statechart_method 
+        public void distributedFieldService_exit() {
+            distributedFieldServiceExit();
+            animInstance().notifyStateExited("ROOT.distributedFieldService");
+        }
+        
+        //## statechart_method 
+        public void distributedFieldService_enter() {
+            animInstance().notifyStateEntered("ROOT.distributedFieldService");
+            rootState_subState = distributedFieldService;
+            rootState_active = distributedFieldService;
+            distributedFieldServiceEnter();
         }
         
         //## statechart_method 
@@ -716,10 +1071,30 @@ public class FieldUnit implements RiJStateConcept, Animated {
             //#[ transition 2 
             requestFieldService();
             //#]
-            requestedLocController_entDef();
+            distributedFieldService_entDef();
             animInstance().notifyTransitionEnded("2");
             res = RiJStateReactive.TAKE_EVENT_COMPLETE;
             return res;
+        }
+        
+        //## statechart_method 
+        public void checkedPointField_exit() {
+            checkedPointFieldExit();
+            animInstance().notifyStateExited("ROOT.checkedPointField");
+        }
+        
+        //## statechart_method 
+        public void checkedPolicyFieldExit() {
+        }
+        
+        //## statechart_method 
+        public void checkedPolicyField_exit() {
+            checkedPolicyFieldExit();
+            animInstance().notifyStateExited("ROOT.checkedPolicyField");
+        }
+        
+        //## statechart_method 
+        public void distributedFieldServiceExit() {
         }
         
         //## statechart_method 
@@ -727,28 +1102,29 @@ public class FieldUnit implements RiJStateConcept, Animated {
         }
         
         //## statechart_method 
-        public int requestedLocController_takeEvent(short id) {
+        public void checkedRightsField_entDef() {
+            checkedRightsField_enter();
+        }
+        
+        //## statechart_method 
+        public int Idle_takeEvent(short id) {
             int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
-            if(event.isTypeOf(backServiceInfo.backServiceInfo_sysSCADA_id))
+            if(event.isTypeOf(EnterSingleAccessField.EnterSingleAccessField_sysSCADA_id))
                 {
-                    res = requestedLocControllerTakebackServiceInfo();
+                    res = IdleTakeEnterSingleAccessField();
                 }
             
             return res;
         }
         
         //## statechart_method 
-        public void requestedLocControllerEnter() {
-        }
-        
-        //## statechart_method 
-        public int Idle_takeEvent(short id) {
+        public int IdleTakeEnterSingleAccessField() {
             int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
-            if(event.isTypeOf(recieveFromCenterByNet.recieveFromCenterByNet_sysSCADA_id))
-                {
-                    res = IdleTakerecieveFromCenterByNet();
-                }
-            
+            animInstance().notifyTransitionStarted("4");
+            Idle_exit();
+            EnterEspaceField_entDef();
+            animInstance().notifyTransitionEnded("4");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
             return res;
         }
         
@@ -765,6 +1141,19 @@ public class FieldUnit implements RiJStateConcept, Animated {
         }
         
         //## statechart_method 
+        public void checkedPointField_enter() {
+            animInstance().notifyStateEntered("ROOT.checkedPointField");
+            rootState_subState = checkedPointField;
+            rootState_active = checkedPointField;
+            checkedPointFieldEnter();
+        }
+        
+        //## statechart_method 
+        public void checkedPointField_entDef() {
+            checkedPointField_enter();
+        }
+        
+        //## statechart_method 
         public void recievedFromCenter_enter() {
             animInstance().notifyStateEntered("ROOT.recievedFromCenter");
             rootState_subState = recievedFromCenter;
@@ -773,27 +1162,19 @@ public class FieldUnit implements RiJStateConcept, Animated {
         }
         
         //## statechart_method 
-        public int requestedLocControllerTakebackServiceInfo() {
+        public int rootState_takeEvent(short id) {
             int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
-            animInstance().notifyTransitionStarted("3");
-            requestedLocController_exit();
-            //#[ transition 3 
-            sendBackServiceInfoToNet();
-            //#]
-            Idle_entDef();
-            animInstance().notifyTransitionEnded("3");
-            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
             return res;
         }
         
         //## statechart_method 
-        public void requestedLocController_entDef() {
-            requestedLocController_enter();
-        }
-        
-        //## statechart_method 
-        public int rootState_takeEvent(short id) {
+        public int checkedRightsFieldTakefieldRightsFeedback() {
             int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            animInstance().notifyTransitionStarted("9");
+            checkedRightsField_exit();
+            checkedPointField_entDef();
+            animInstance().notifyTransitionEnded("9");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
             return res;
         }
         
@@ -807,9 +1188,41 @@ public class FieldUnit implements RiJStateConcept, Animated {
         }
         
         //## statechart_method 
-        public void requestedLocController_exit() {
-            requestedLocControllerExit();
-            animInstance().notifyStateExited("ROOT.requestedLocController");
+        public int checkedPointField_takeEvent(short id) {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            if(event.isTypeOf(recieveFromCenterByNet.recieveFromCenterByNet_sysSCADA_id))
+                {
+                    res = checkedPointFieldTakerecieveFromCenterByNet();
+                }
+            else if(event.isTypeOf(toCheckFieldPolicy.toCheckFieldPolicy_sysSCADA_id))
+                {
+                    res = checkedPointFieldTaketoCheckFieldPolicy();
+                }
+            else if(event.isTypeOf(toCheckFieldRights.toCheckFieldRights_sysSCADA_id))
+                {
+                    res = checkedPointFieldTaketoCheckFieldRights();
+                }
+            
+            return res;
+        }
+        
+        //## statechart_method 
+        public int checkedPointFieldTaketoCheckFieldRights() {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            animInstance().notifyTransitionStarted("7");
+            checkedPointField_exit();
+            checkedRightsField_entDef();
+            animInstance().notifyTransitionEnded("7");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
+            return res;
+        }
+        
+        //## statechart_method 
+        public void EnterEspaceFieldExit() {
+        }
+        
+        //## statechart_method 
+        public void EnterEspaceFieldEnter() {
         }
         
         //## statechart_method 
@@ -829,6 +1242,19 @@ public class FieldUnit implements RiJStateConcept, Animated {
         }
         
         //## statechart_method 
+        public void checkedRightsField_enter() {
+            animInstance().notifyStateEntered("ROOT.checkedRightsField");
+            rootState_subState = checkedRightsField;
+            rootState_active = checkedRightsField;
+            checkedRightsFieldEnter();
+        }
+        
+        //## statechart_method 
+        public void distributedFieldService_entDef() {
+            distributedFieldService_enter();
+        }
+        
+        //## statechart_method 
         public void IdleEnter() {
         }
         
@@ -844,6 +1270,32 @@ public class FieldUnit implements RiJStateConcept, Animated {
         }
         
         //## statechart_method 
+        public int checkedRightsField_takeEvent(short id) {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            if(event.isTypeOf(fieldRightsFeedback.fieldRightsFeedback_sysSCADA_id))
+                {
+                    res = checkedRightsFieldTakefieldRightsFeedback();
+                }
+            
+            return res;
+        }
+        
+        //## statechart_method 
+        public void checkedRightsFieldExit() {
+        }
+        
+        //## statechart_method 
+        public void EnterEspaceField_exit() {
+            EnterEspaceFieldExit();
+            animInstance().notifyStateExited("ROOT.EnterEspaceField");
+        }
+        
+        //## statechart_method 
+        public void EnterEspaceField_entDef() {
+            EnterEspaceField_enter();
+        }
+        
+        //## statechart_method 
         public void recievedFromCenter_entDef() {
             recievedFromCenter_enter();
         }
@@ -856,7 +1308,18 @@ public class FieldUnit implements RiJStateConcept, Animated {
         }
         
         //## statechart_method 
-        public void requestedLocControllerExit() {
+        public int EnterEspaceFieldTakecheckpointField() {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            animInstance().notifyTransitionStarted("5");
+            EnterEspaceField_exit();
+            checkedPointField_entDef();
+            animInstance().notifyTransitionEnded("5");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
+            return res;
+        }
+        
+        //## statechart_method 
+        public void checkedRightsFieldEnter() {
         }
         
         //## statechart_method 
@@ -866,11 +1329,47 @@ public class FieldUnit implements RiJStateConcept, Animated {
         }
         
         //## statechart_method 
-        public void requestedLocController_enter() {
-            animInstance().notifyStateEntered("ROOT.requestedLocController");
-            rootState_subState = requestedLocController;
-            rootState_active = requestedLocController;
-            requestedLocControllerEnter();
+        public int checkedPolicyFieldTakefieldPolicyFeedback() {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            animInstance().notifyTransitionStarted("8");
+            checkedPolicyField_exit();
+            checkedPointField_entDef();
+            animInstance().notifyTransitionEnded("8");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
+            return res;
+        }
+        
+        //## statechart_method 
+        public int distributedFieldService_takeEvent(short id) {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            if(event.isTypeOf(backServiceInfo.backServiceInfo_sysSCADA_id))
+                {
+                    res = distributedFieldServiceTakebackServiceInfo();
+                }
+            
+            return res;
+        }
+        
+        //## statechart_method 
+        public int distributedFieldServiceTakebackServiceInfo() {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            animInstance().notifyTransitionStarted("3");
+            distributedFieldService_exit();
+            //#[ transition 3 
+            sendBackServiceInfoToNet();
+            //#]
+            Idle_entDef();
+            animInstance().notifyTransitionEnded("3");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
+            return res;
+        }
+        
+        //## statechart_method 
+        public void EnterEspaceField_enter() {
+            animInstance().notifyStateEntered("ROOT.EnterEspaceField");
+            rootState_subState = EnterEspaceField;
+            rootState_active = EnterEspaceField;
+            EnterEspaceFieldEnter();
         }
         
         //## statechart_method 
@@ -878,17 +1377,18 @@ public class FieldUnit implements RiJStateConcept, Animated {
         }
         
         //## statechart_method 
-        public int IdleTakerecieveFromCenterByNet() {
-            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
-            animInstance().notifyTransitionStarted("1");
-            Idle_exit();
-            //#[ transition 1 
-            sendRequestLocController();
-            //#]
-            recievedFromCenter_entDef();
-            animInstance().notifyTransitionEnded("1");
-            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
-            return res;
+        public void checkedPolicyField_entDef() {
+            checkedPolicyField_enter();
+        }
+        
+        //## statechart_method 
+        public void checkedRightsField_exit() {
+            checkedRightsFieldExit();
+            animInstance().notifyStateExited("ROOT.checkedRightsField");
+        }
+        
+        //## statechart_method 
+        public void distributedFieldServiceEnter() {
         }
         
         /**  methods added just for design level debugging instrumentation */
@@ -918,21 +1418,6 @@ public class FieldUnit implements RiJStateConcept, Animated {
         /**  see com.ibm.rational.rhapsody.animation.AnimatedReactive interface */
         public AnimInstance animInstance() { 
             return FieldUnit.this.animInstance(); 
-        }
-        
-    }
-    /**
-    [[ * @see $See]]
-    [[ * @since $Since]]
-    */
-    //## ignore 
-    public class p_field_net_C extends RiJDefaultReactivePort {
-        
-        
-        // Constructors
-        
-        //## auto_generated 
-        public  p_field_net_C() {
         }
         
     }
@@ -978,6 +1463,36 @@ public class FieldUnit implements RiJStateConcept, Animated {
         }
         
     }
+    /**
+    [[ * @see $See]]
+    [[ * @since $Since]]
+    */
+    //## ignore 
+    public class p_field_innet_C extends RiJDefaultReactivePort {
+        
+        
+        // Constructors
+        
+        //## auto_generated 
+        public  p_field_innet_C() {
+        }
+        
+    }
+    /**
+    [[ * @see $See]]
+    [[ * @since $Since]]
+    */
+    //## ignore 
+    public class p_field_outnet_C extends RiJDefaultReactivePort {
+        
+        
+        // Constructors
+        
+        //## auto_generated 
+        public  p_field_outnet_C() {
+        }
+        
+    }
     //#[ ignore
     /**  see com.ibm.rational.rhapsody.animation.Animated interface */
     public AnimClass getAnimClass() { 
@@ -1016,6 +1531,12 @@ public class FieldUnit implements RiJStateConcept, Animated {
         msg.add("itsLocalController", true, true, itsLocalController);
         msg.add("itsCommNetwork", false, true, itsCommNetwork);
         msg.add("itsFieldService", true, true, itsFieldService);
+        msg.add("itsSingleAccessPoint_0", true, true, itsSingleAccessPoint_0);
+        msg.add("itsCheckPoint_0", true, true, itsCheckPoint_0);
+        msg.add("itsRights_0", true, true, itsRights_0);
+        msg.add("itsSecurityPolicy_0", true, true, itsSecurityPolicy_0);
+        msg.add("itsLocalController_1", true, true, itsLocalController_1);
+        msg.add("itsFieldService_1", true, true, itsFieldService_1);
     }
     /** An inner class added as instrumentation for animation */
     public class Animate extends AnimInstance { 

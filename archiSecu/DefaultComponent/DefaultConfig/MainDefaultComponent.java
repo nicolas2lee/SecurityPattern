@@ -4,7 +4,7 @@
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: DefaultConfig
-//!	Generated Date	: Wed, 10, Feb 2016 
+//!	Generated Date	: Wed, 17, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/MainDefaultComponent.java
 *********************************************************************/
 
@@ -53,22 +53,46 @@ public class MainDefaultComponent {
             Class.forName("securityPattern.rejectedRights");
             Class.forName("securityPattern.requested");
             Class.forName("securityPattern.triedMorethanThreetimes");
-            Class.forName("sysSCADA.backData");
-            Class.forName("sysSCADA.backInteraction");
             Class.forName("sysSCADA.backServiceInfo");
+            Class.forName("sysSCADA.checkpointField");
+            Class.forName("sysSCADA.checkSuccess");
             Class.forName("sysSCADA.distributeService");
             Class.forName("sysSCADA.doSomething");
+            Class.forName("sysSCADA.EnterSingleAccessField");
+            Class.forName("sysSCADA.fieldPolicyFeedback");
+            Class.forName("sysSCADA.fieldRightsFeedback");
             Class.forName("sysSCADA.interactHMI");
             Class.forName("sysSCADA.offerService");
+            Class.forName("sysSCADA.queryData");
+            Class.forName("sysSCADA.queryDataserver");
+            Class.forName("sysSCADA.receivedBackInfo");
             Class.forName("sysSCADA.recieveFromCenter");
             Class.forName("sysSCADA.recieveFromCenterByNet");
             Class.forName("sysSCADA.request");
+            Class.forName("sysSCADA.requestFromUsr");
             Class.forName("sysSCADA.requestService");
+            Class.forName("sysSCADA.requestToAccessNet");
             Class.forName("sysSCADA.requestToCenter");
+            Class.forName("sysSCADA.requestToHMI");
+            Class.forName("sysSCADA.requestToLogin");
+            Class.forName("sysSCADA.ReturnNetPolicy");
+            Class.forName("sysSCADA.returnNetRights");
+            Class.forName("sysSCADA.returnPolicy");
+            Class.forName("sysSCADA.returnPolicyToCen");
+            Class.forName("sysSCADA.returnRightsToCen");
+            Class.forName("sysSCADA.selectData");
+            Class.forName("sysSCADA.selectedData");
             Class.forName("sysSCADA.sendFeedback");
             Class.forName("sysSCADA.sendToCenter");
             Class.forName("sysSCADA.sendToLocal");
-            Class.forName("sysSCADA.sendToUser");
+            Class.forName("sysSCADA.toCheckFieldPolicy");
+            Class.forName("sysSCADA.toCheckFieldRights");
+            Class.forName("sysSCADA.toCheckPoint");
+            Class.forName("sysSCADA.toCheckPointNet");
+            Class.forName("sysSCADA.toCheckPolicy");
+            Class.forName("sysSCADA.toCheckPolicyNet");
+            Class.forName("sysSCADA.toCheckRights");
+            Class.forName("sysSCADA.toCheckRightsNet");
             Class.forName("sysSCADA.triggerData");
     
         // Registering Static Classes 

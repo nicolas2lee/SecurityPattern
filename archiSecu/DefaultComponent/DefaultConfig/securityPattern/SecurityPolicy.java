@@ -4,7 +4,7 @@
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: SecurityPolicy
-//!	Generated Date	: Wed, 10, Feb 2016 
+//!	Generated Date	: Wed, 17, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/securityPattern/SecurityPolicy.java
 *********************************************************************/
 
@@ -39,8 +39,6 @@ public class SecurityPolicy implements RiJStateConcept, Animated {
     public Reactive reactive;		//## ignore 
     
     protected SecurityPolicy.p_policy_check_C p_policy_check;		//## ignore 
-    
-    protected SecurityPolicy.p_policy_cm_C p_policy_cm;		//## ignore 
     
     protected checkPoint itsCheckPoint;		//## link itsCheckPoint 
     
@@ -145,27 +143,6 @@ public class SecurityPolicy implements RiJStateConcept, Animated {
     //## auto_generated 
     public void deleteP_policy_check() {
         p_policy_check=null;
-    }
-    
-    //## auto_generated 
-    public SecurityPolicy.p_policy_cm_C getP_policy_cm() {
-        return p_policy_cm;
-    }
-    
-    //## auto_generated 
-    public SecurityPolicy.p_policy_cm_C get_p_policy_cm() {
-        return p_policy_cm;
-    }
-    
-    //## auto_generated 
-    public SecurityPolicy.p_policy_cm_C newP_policy_cm() {
-        p_policy_cm = new SecurityPolicy.p_policy_cm_C();
-        return p_policy_cm;
-    }
-    
-    //## auto_generated 
-    public void deleteP_policy_cm() {
-        p_policy_cm=null;
     }
     
     //## operation sendInvalidToCheckpoint() 
@@ -306,11 +283,8 @@ public class SecurityPolicy implements RiJStateConcept, Animated {
     //## auto_generated 
     protected void initRelations(RiJThread p_thread) {
         p_policy_check = newP_policy_check();
-        p_policy_cm = newP_policy_cm();
         if(getP_policy_check() != null)
            getP_policy_check().connectSecurityPolicy(this);
-        if(getP_policy_cm() != null)
-           getP_policy_cm().connectSecurityPolicy(this);
     }
     
     //## auto_generated 
@@ -749,33 +723,6 @@ public class SecurityPolicy implements RiJStateConcept, Animated {
         
         //## auto_generated 
         public  p_policy_check_C() {
-        }
-        
-        /**
-         * @param part
-        */
-        //## operation connectSecurityPolicy(SecurityPolicy) 
-        public void connectSecurityPolicy(SecurityPolicy part) {
-            //#[ operation connectSecurityPolicy(SecurityPolicy) 
-            InBound.setItsDefaultProvidedInterface(part);
-            InBound.setPort(this); // for IS_PORT macro support
-            
-            //#]
-        }
-        
-    }
-    /**
-    [[ * @see $See]]
-    [[ * @since $Since]]
-    */
-    //## ignore 
-    public class p_policy_cm_C extends RiJDefaultReactivePort {
-        
-        
-        // Constructors
-        
-        //## auto_generated 
-        public  p_policy_cm_C() {
         }
         
         /**

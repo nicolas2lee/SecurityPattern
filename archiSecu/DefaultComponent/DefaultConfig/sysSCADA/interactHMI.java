@@ -4,7 +4,7 @@
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: interactHMI
-//!	Generated Date	: Wed, 10, Feb 2016 
+//!	Generated Date	: Wed, 17, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/sysSCADA/interactHMI.java
 *********************************************************************/
 
@@ -27,7 +27,7 @@ import com.ibm.rational.rhapsody.animcom.animMessages.*;
 //## event interactHMI() 
 public class interactHMI extends RiJEvent implements AnimatedEvent {
     
-    public static final int interactHMI_sysSCADA_id = 18625;		//## ignore 
+    public static final int interactHMI_sysSCADA_id = 18624;		//## ignore 
     
     
     // Constructors

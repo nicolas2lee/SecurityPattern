@@ -85,7 +85,7 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 			}
 		}
 	}
-	- _modifiedTimeWeak = 2.10.2016::20:45:21;
+	- _modifiedTimeWeak = 2.17.2016::16:9:59;
 	- _theMainDiagram = { IHandle 
 		- _m2Class = "IDiagram";
 		- _id = GUID 6fc60a5f-5a6a-4fb7-86a3-a2cc359313d8;
@@ -450,7 +450,7 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 			}
 			- _name = "structurediagram_center";
 			- _modifiedTimeWeak = 1.28.2016::10:31:12;
-			- _lastModifiedTime = "2.10.2016::20:45:21";
+			- _lastModifiedTime = "2.17.2016::16:10:22";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 8fcb7b71-bf70-473a-8055-1e60f19716ab;
 				- m_type = 0;
@@ -474,7 +474,7 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 				}
 				- m_drawBehavior = 0;
 				- m_bIsPreferencesInitialized = 0;
-				- elementList = 37;
+				- elementList = 35;
 				{ CGIClass 
 					- _id = GUID bed93ef1-d370-48be-938a-b127a5b168b6;
 					- m_type = 78;
@@ -2859,86 +2859,6 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 						- m_bImplicitSetRectPoints = 0;
 					}
 				}
-				{ CGIPortConnector 
-					- _id = GUID 80452043-bb9f-40f4-8d70-42b129adf535;
-					- m_type = 57;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "IPort";
-						- _filename = "sysSCADA.sbs";
-						- _subsystem = "sysSCADA";
-						- _class = "HMI";
-						- _name = "p_HMI_cen";
-						- _id = GUID 5c000d82-9397-42cf-bef3-c7cbd7b926c4;
-					}
-					- m_pParent = GUID 75f97e26-5fcf-432f-83e7-c762e35b0955;
-					- m_name = { CGIText 
-						- m_str = "p_HMI_cen";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nVerticalSpacing = -19;
-						- m_nOrientationCtrlPt = 2;
-					}
-					- m_drawBehavior = 0;
-					- m_transform = -2.70936e-005 -9.8421 8.14615 -3.27342e-005 -317.7 1677.29 ;
-					- m_bIsPreferencesInitialized = 0;
-					- m_AdditionalLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nVerticalSpacing = -29;
-						- m_nOrientationCtrlPt = 2;
-					}
-					- m_position = 4 0 0  0 73  68 73  68 0  ;
-					- m_pInheritsFrom = { IHandle 
-						- _m2Class = "";
-					}
-					- m_nInheritanceMask = 0;
-					- m_SubType = 0;
-					- m_providedInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = 67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_requiredInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-				}
 				{ CGIAssociationEnd 
 					- _id = GUID 352be06d-3abb-492c-b0d4-3bf014ac0e2d;
 					- _properties = { IPropertyContainer 
@@ -3375,136 +3295,6 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 						- m_bImplicitSetRectPoints = 0;
 					}
 				}
-				{ CGIObjectLink 
-					- _id = GUID fca24cfe-70e6-4646-9e7c-21d2fd9fd1c3;
-					- _properties = { IPropertyContainer 
-						- Subjects = { IRPYRawContainer 
-							- size = 1;
-							- value = 
-							{ IPropertySubject 
-								- _Name = "General";
-								- Metaclasses = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IPropertyMetaclass 
-										- _Name = "Graphics";
-										- Properties = { IRPYRawContainer 
-											- size = 1;
-											- value = 
-											{ IProperty 
-												- _Name = "ShowLabels";
-												- _Value = "False";
-												- _Type = Bool;
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					- m_type = 80;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "IObjectLink";
-						- _filename = "sysSCADA.sbs";
-						- _subsystem = "sysSCADA";
-						- _class = "centerController";
-						- _name = "itsCheckPoint_0_itsHMI_2";
-						- _id = GUID f65bfb1b-afb5-4763-94dd-81978b149d47;
-					}
-					- m_pParent = ;
-					- m_name = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_drawBehavior = 4096;
-					- m_bIsPreferencesInitialized = 1;
-					- m_pSource = GUID c7774b4b-3197-4856-9b8b-0dd849b791b5;
-					- m_sourceType = 'F';
-					- m_pTarget = GUID 80452043-bb9f-40f4-8d70-42b129adf535;
-					- m_targetType = 'T';
-					- m_direction = ' ';
-					- m_rpn = { CGIText 
-						- m_str = "itsCheckPoint_0_itsHMI_2";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_arrow = 3 307 488  406 488  406 369  ;
-					- m_anglePoint1 = 0 0 ;
-					- m_anglePoint2 = 0 0 ;
-					- m_line_style = 2;
-					- m_SourcePort = 30 38 ;
-					- m_TargetPort = 27 35 ;
-					- m_bShowSourceMultiplicity = 0;
-					- m_bShowSourceRole = 0;
-					- m_bShowTargetMultiplicity = 0;
-					- m_bShowTargetRole = 0;
-					- m_bShowLinkName = 0;
-					- m_sourceRole = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 2;
-						- m_bImplicitSetRectPoints = 0;
-					}
-					- m_targetRole = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 3;
-						- m_bImplicitSetRectPoints = 0;
-					}
-					- m_sourceMultiplicity = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 4;
-						- m_bImplicitSetRectPoints = 0;
-					}
-					- m_targetMultiplicity = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 5;
-						- m_bImplicitSetRectPoints = 0;
-					}
-				}
 				{ CGIPortConnector 
 					- _id = GUID fb29ddc2-c598-4501-9553-68225c1b3886;
 					- m_type = 57;
@@ -3716,330 +3506,6 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 					}
 				}
 				{ CGIPortConnector 
-					- _id = GUID 0f78061a-548c-468c-a1d4-d461e892266d;
-					- m_type = 57;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "IPort";
-						- _filename = "sysSCADA.sbs";
-						- _subsystem = "sysSCADA";
-						- _class = "dataServer";
-						- _name = "p_data_HMI";
-						- _id = GUID e9704023-31fb-4ac4-aedd-d781ea6a9670;
-					}
-					- m_pParent = GUID 2fea7632-33dd-4d3c-a4ce-9ee34574a79e;
-					- m_name = { CGIText 
-						- m_str = "p_data_HMI";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -27;
-						- m_nVerticalSpacing = -9;
-						- m_nOrientationCtrlPt = 5;
-					}
-					- m_drawBehavior = 0;
-					- m_transform = 4.92557 -1.95111e-012 -1.26344e-012 9.84208 322.267 -63.7783 ;
-					- m_bIsPreferencesInitialized = 0;
-					- m_AdditionalLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -7;
-						- m_nVerticalSpacing = -20;
-						- m_nOrientationCtrlPt = 5;
-					}
-					- m_position = 4 0 0  0 73  68 73  68 0  ;
-					- m_pInheritsFrom = { IHandle 
-						- _m2Class = "";
-					}
-					- m_nInheritanceMask = 0;
-					- m_SubType = 0;
-					- m_providedInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = 67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_requiredInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-				}
-				{ CGIPortConnector 
-					- _id = GUID 878c268f-1148-4147-a000-5a40093d6095;
-					- m_type = 57;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "IPort";
-						- _filename = "sysSCADA.sbs";
-						- _subsystem = "sysSCADA";
-						- _class = "HMI";
-						- _name = "p_HMI_data";
-						- _id = GUID c375c4f8-8b81-4295-93c8-76d2ac8cc812;
-					}
-					- m_pParent = GUID 75f97e26-5fcf-432f-83e7-c762e35b0955;
-					- m_name = { CGIText 
-						- m_str = "p_HMI_data";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -27;
-						- m_nVerticalSpacing = 9;
-						- m_nOrientationCtrlPt = 1;
-					}
-					- m_drawBehavior = 0;
-					- m_transform = -8.14614 3.27341e-005 -2.70935e-005 -9.84208 827.42 1833.09 ;
-					- m_bIsPreferencesInitialized = 0;
-					- m_AdditionalLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -7;
-						- m_nVerticalSpacing = -4;
-						- m_nOrientationCtrlPt = 1;
-					}
-					- m_position = 4 0 0  0 73  68 73  68 0  ;
-					- m_pInheritsFrom = { IHandle 
-						- _m2Class = "";
-					}
-					- m_nInheritanceMask = 0;
-					- m_SubType = 0;
-					- m_providedInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = 67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_requiredInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-				}
-				{ CGIPortConnector 
-					- _id = GUID 4f44cb4e-75c4-45ef-bbdb-9ad035482ca8;
-					- m_type = 57;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "IPort";
-						- _filename = "securityPattern.sbs";
-						- _subsystem = "securityPattern";
-						- _class = "SingleAccessPoint";
-						- _name = "p_single_outnet";
-						- _id = GUID e960efd7-4c8e-404f-b2f3-e55bb5919fb4;
-					}
-					- m_pParent = GUID bad2c835-5036-4b36-95c9-7b43263df17c;
-					- m_name = { CGIText 
-						- m_str = "p_single_outnet";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nVerticalSpacing = -19;
-						- m_nOrientationCtrlPt = 2;
-					}
-					- m_drawBehavior = 0;
-					- m_transform = -1.12171e-005 -4.98666 3.37261 -1.65853e-005 -128.159 703.12 ;
-					- m_bIsPreferencesInitialized = 0;
-					- m_AdditionalLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nVerticalSpacing = -29;
-						- m_nOrientationCtrlPt = 2;
-					}
-					- m_position = 4 0 0  0 73  68 73  68 0  ;
-					- m_pInheritsFrom = { IHandle 
-						- _m2Class = "";
-					}
-					- m_nInheritanceMask = 0;
-					- m_SubType = 0;
-					- m_providedInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = 67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_requiredInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-				}
-				{ CGIPortConnector 
-					- _id = GUID 388ab99f-f4ce-4022-b4f0-d14b73d19e08;
-					- m_type = 57;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "IPort";
-						- _filename = "securityPattern.sbs";
-						- _subsystem = "securityPattern";
-						- _class = "checkPoint";
-						- _name = "p_check_outnet";
-						- _id = GUID d48b1643-ed0f-4163-a3e5-4518394d471d;
-					}
-					- m_pParent = GUID 4582c091-099f-4165-9be7-bfce07d419e6;
-					- m_name = { CGIText 
-						- m_str = "p_check_outnet";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nVerticalSpacing = -19;
-						- m_nOrientationCtrlPt = 2;
-					}
-					- m_drawBehavior = 0;
-					- m_transform = -1.66927e-005 -9.84208 5.01896 -3.27341e-005 -195.739 1181.05 ;
-					- m_bIsPreferencesInitialized = 0;
-					- m_AdditionalLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nVerticalSpacing = -29;
-						- m_nOrientationCtrlPt = 2;
-					}
-					- m_position = 4 0 0  0 73  68 73  68 0  ;
-					- m_pInheritsFrom = { IHandle 
-						- _m2Class = "";
-					}
-					- m_nInheritanceMask = 0;
-					- m_SubType = 0;
-					- m_providedInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = 67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_requiredInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-				}
-				{ CGIPortConnector 
 					- _id = GUID 8a8aa73b-3d15-43c1-bc3d-677948e3812f;
 					- m_type = 57;
 					- m_pModelObject = { IHandle 
@@ -4241,6 +3707,328 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 						- m_bImplicitSetRectPoints = 0;
 						- m_nVerticalSpacing = -29;
 						- m_nOrientationCtrlPt = 0;
+					}
+					- m_position = 4 0 0  0 73  68 73  68 0  ;
+					- m_pInheritsFrom = { IHandle 
+						- _m2Class = "";
+					}
+					- m_nInheritanceMask = 0;
+					- m_SubType = 0;
+					- m_providedInterfaceLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = 67;
+						- m_nVerticalSpacing = -25;
+						- m_nOrientationCtrlPt = 8;
+					}
+					- m_requiredInterfaceLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = -67;
+						- m_nVerticalSpacing = -25;
+						- m_nOrientationCtrlPt = 8;
+					}
+				}
+				{ CGIPortConnector 
+					- _id = GUID d8fd15f7-3216-4865-9bd8-f6f2c7ce24f0;
+					- m_type = 57;
+					- m_pModelObject = { IHandle 
+						- _m2Class = "IPort";
+						- _filename = "sysSCADA.sbs";
+						- _subsystem = "sysSCADA";
+						- _class = "dataServer";
+						- _name = "p_ser_check";
+						- _id = GUID 749da886-9825-4080-94a0-e548b28a6498;
+					}
+					- m_pParent = GUID 2fea7632-33dd-4d3c-a4ce-9ee34574a79e;
+					- m_name = { CGIText 
+						- m_str = "p_ser_check";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = -31;
+						- m_nVerticalSpacing = -9;
+						- m_nOrientationCtrlPt = 5;
+					}
+					- m_drawBehavior = 0;
+					- m_transform = 4.92557 -1.95111e-012 -1.26344e-012 9.84208 75.9884 -63.7777 ;
+					- m_bIsPreferencesInitialized = 0;
+					- m_AdditionalLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = -7;
+						- m_nVerticalSpacing = -20;
+						- m_nOrientationCtrlPt = 5;
+					}
+					- m_position = 4 0 0  0 73  68 73  68 0  ;
+					- m_pInheritsFrom = { IHandle 
+						- _m2Class = "";
+					}
+					- m_nInheritanceMask = 0;
+					- m_SubType = 0;
+					- m_providedInterfaceLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = 67;
+						- m_nVerticalSpacing = -25;
+						- m_nOrientationCtrlPt = 8;
+					}
+					- m_requiredInterfaceLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = -67;
+						- m_nVerticalSpacing = -25;
+						- m_nOrientationCtrlPt = 8;
+					}
+				}
+				{ CGIPortConnector 
+					- _id = GUID 2ec95bb9-cf6c-4a41-9f4f-166f9dd549d3;
+					- m_type = 57;
+					- m_pModelObject = { IHandle 
+						- _m2Class = "IPort";
+						- _filename = "sysSCADA.sbs";
+						- _subsystem = "sysSCADA";
+						- _class = "HMI";
+						- _name = "p_HMI_single";
+						- _id = GUID 81508e49-93ad-4728-8c00-ac321cfe203b;
+					}
+					- m_pParent = GUID 75f97e26-5fcf-432f-83e7-c762e35b0955;
+					- m_name = { CGIText 
+						- m_str = "p_HMI_single";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nVerticalSpacing = -19;
+						- m_nOrientationCtrlPt = 2;
+					}
+					- m_drawBehavior = 0;
+					- m_transform = -2.70935e-005 -9.84208 8.14614 -3.27341e-005 -317.698 1220.42 ;
+					- m_bIsPreferencesInitialized = 0;
+					- m_AdditionalLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nVerticalSpacing = -29;
+						- m_nOrientationCtrlPt = 2;
+					}
+					- m_position = 4 0 0  0 73  68 73  68 0  ;
+					- m_pInheritsFrom = { IHandle 
+						- _m2Class = "";
+					}
+					- m_nInheritanceMask = 0;
+					- m_SubType = 0;
+					- m_providedInterfaceLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = 67;
+						- m_nVerticalSpacing = -25;
+						- m_nOrientationCtrlPt = 8;
+					}
+					- m_requiredInterfaceLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = -67;
+						- m_nVerticalSpacing = -25;
+						- m_nOrientationCtrlPt = 8;
+					}
+				}
+				{ CGIPortConnector 
+					- _id = GUID a83b1741-2704-4020-a89d-f4f46f26cc75;
+					- m_type = 57;
+					- m_pModelObject = { IHandle 
+						- _m2Class = "IPort";
+						- _filename = "sysSCADA.sbs";
+						- _subsystem = "sysSCADA";
+						- _class = "HMI";
+						- _name = "p_HMI_usr";
+						- _id = GUID 1e3b7451-6e23-4bfc-b823-4232b4b909da;
+					}
+					- m_pParent = GUID 75f97e26-5fcf-432f-83e7-c762e35b0955;
+					- m_name = { CGIText 
+						- m_str = "p_HMI_usr";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nVerticalSpacing = -19;
+						- m_nOrientationCtrlPt = 2;
+					}
+					- m_drawBehavior = 0;
+					- m_transform = -2.70935e-005 -9.84208 8.14614 -3.27341e-005 -317.698 1545.21 ;
+					- m_bIsPreferencesInitialized = 0;
+					- m_AdditionalLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nVerticalSpacing = -29;
+						- m_nOrientationCtrlPt = 2;
+					}
+					- m_position = 4 0 0  0 73  68 73  68 0  ;
+					- m_pInheritsFrom = { IHandle 
+						- _m2Class = "";
+					}
+					- m_nInheritanceMask = 0;
+					- m_SubType = 0;
+					- m_providedInterfaceLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = 67;
+						- m_nVerticalSpacing = -25;
+						- m_nOrientationCtrlPt = 8;
+					}
+					- m_requiredInterfaceLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nHorizontalSpacing = -67;
+						- m_nVerticalSpacing = -25;
+						- m_nOrientationCtrlPt = 8;
+					}
+				}
+				{ CGIPortConnector 
+					- _id = GUID 2a39beab-803e-40e9-b40f-31d158211aa1;
+					- m_type = 57;
+					- m_pModelObject = { IHandle 
+						- _m2Class = "IPort";
+						- _filename = "sysSCADA.sbs";
+						- _subsystem = "sysSCADA";
+						- _class = "HMI";
+						- _name = "p_backcen_net";
+						- _id = GUID 545b71b4-99f3-4569-9eed-be8c65409fc9;
+					}
+					- m_pParent = GUID 75f97e26-5fcf-432f-83e7-c762e35b0955;
+					- m_name = { CGIText 
+						- m_str = "p_backcen_net";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nVerticalSpacing = -19;
+						- m_nOrientationCtrlPt = 2;
+					}
+					- m_drawBehavior = 0;
+					- m_transform = -2.70935e-005 -9.84208 8.14614 -3.27341e-005 -317.698 1062.95 ;
+					- m_bIsPreferencesInitialized = 0;
+					- m_AdditionalLabel = { CGIText 
+						- m_str = "";
+						- m_style = "Arial" 10 0 0 0 1 ;
+						- m_color = { IColor 
+							- m_fgColor = 0;
+							- m_bgColor = 0;
+							- m_bgFlag = 0;
+						}
+						- m_position = 1 0 0  ;
+						- m_nIdent = 0;
+						- m_bImplicitSetRectPoints = 0;
+						- m_nVerticalSpacing = -29;
+						- m_nOrientationCtrlPt = 2;
 					}
 					- m_position = 4 0 0  0 73  68 73  68 0  ;
 					- m_pInheritsFrom = { IHandle 
@@ -4510,7 +4298,7 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 			}
 			- _name = "structurediagram_commuNet";
 			- _modifiedTimeWeak = 1.2.1990::0:0:0;
-			- _lastModifiedTime = "2.10.2016::20:35:26";
+			- _lastModifiedTime = "2.17.2016::16:10:17";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 7dc87b21-4e57-43a9-b7ad-a812945d5e6f;
 				- m_type = 0;
@@ -4534,7 +4322,7 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 				}
 				- m_drawBehavior = 0;
 				- m_bIsPreferencesInitialized = 0;
-				- elementList = 26;
+				- elementList = 22;
 				{ CGIClass 
 					- _id = GUID 584a76d2-c974-4cf7-9af9-9197ef9737c0;
 					- m_type = 78;
@@ -6653,166 +6441,6 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 					}
 				}
 				{ CGIPortConnector 
-					- _id = GUID d5adb3f4-1355-4f3f-be85-ab9b32975f15;
-					- m_type = 57;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "IPort";
-						- _filename = "securityPattern.sbs";
-						- _subsystem = "securityPattern";
-						- _class = "SingleAccessPoint";
-						- _name = "p_single_outnet";
-						- _id = GUID e960efd7-4c8e-404f-b2f3-e55bb5919fb4;
-					}
-					- m_pParent = GUID 6b666da2-ec9e-47a4-a655-3236abbbb193;
-					- m_name = { CGIText 
-						- m_str = "p_single_outnet";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nVerticalSpacing = -19;
-						- m_nOrientationCtrlPt = 2;
-					}
-					- m_drawBehavior = 0;
-					- m_transform = -2.95819e-005 -9.26617 8.89432 -3.08187e-005 -346.877 843.223 ;
-					- m_bIsPreferencesInitialized = 0;
-					- m_AdditionalLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nVerticalSpacing = -29;
-						- m_nOrientationCtrlPt = 2;
-					}
-					- m_position = 4 0 0  0 73  68 73  68 0  ;
-					- m_pInheritsFrom = { IHandle 
-						- _m2Class = "";
-					}
-					- m_nInheritanceMask = 0;
-					- m_SubType = 0;
-					- m_providedInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = 67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_requiredInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-				}
-				{ CGIPortConnector 
-					- _id = GUID ea54bdc4-9bf9-4026-8837-a0c9faaa6bcc;
-					- m_type = 57;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "IPort";
-						- _filename = "securityPattern.sbs";
-						- _subsystem = "securityPattern";
-						- _class = "checkPoint";
-						- _name = "p_check_outnet";
-						- _id = GUID d48b1643-ed0f-4163-a3e5-4518394d471d;
-					}
-					- m_pParent = GUID f5957105-f2ae-4b99-a545-decd9501956f;
-					- m_name = { CGIText 
-						- m_str = "p_check_outnet";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nVerticalSpacing = -19;
-						- m_nOrientationCtrlPt = 2;
-					}
-					- m_drawBehavior = 0;
-					- m_transform = -2.94618e-005 -10.1043 8.85819 -3.36063e-005 -345.468 1192.31 ;
-					- m_bIsPreferencesInitialized = 0;
-					- m_AdditionalLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nVerticalSpacing = -29;
-						- m_nOrientationCtrlPt = 2;
-					}
-					- m_position = 4 0 0  0 73  68 73  68 0  ;
-					- m_pInheritsFrom = { IHandle 
-						- _m2Class = "";
-					}
-					- m_nInheritanceMask = 0;
-					- m_SubType = 0;
-					- m_providedInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = 67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_requiredInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-				}
-				{ CGIPortConnector 
 					- _id = GUID 1a29a70b-712b-42e1-88e0-f3c34f83a240;
 					- m_type = 57;
 					- m_pModelObject = { IHandle 
@@ -6890,266 +6518,6 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 						- m_nHorizontalSpacing = -67;
 						- m_nVerticalSpacing = -25;
 						- m_nOrientationCtrlPt = 8;
-					}
-				}
-				{ CGIObjectLink 
-					- _id = GUID c352f772-294e-45c1-bf6f-313b4d3fe0eb;
-					- _properties = { IPropertyContainer 
-						- Subjects = { IRPYRawContainer 
-							- size = 1;
-							- value = 
-							{ IPropertySubject 
-								- _Name = "General";
-								- Metaclasses = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IPropertyMetaclass 
-										- _Name = "Graphics";
-										- Properties = { IRPYRawContainer 
-											- size = 1;
-											- value = 
-											{ IProperty 
-												- _Name = "ShowLabels";
-												- _Value = "False";
-												- _Type = Bool;
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					- m_type = 80;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "IObjectLink";
-						- _filename = "sysSCADA.sbs";
-						- _subsystem = "sysSCADA";
-						- _class = "commNetwork";
-						- _name = "p_net_backcen_itsCheckPoint";
-						- _id = GUID 7fc9d439-abeb-4401-8322-87952881b573;
-					}
-					- m_pParent = ;
-					- m_name = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_drawBehavior = 4096;
-					- m_bIsPreferencesInitialized = 1;
-					- m_pSource = GUID 1a29a70b-712b-42e1-88e0-f3c34f83a240;
-					- m_sourceType = 'F';
-					- m_pTarget = GUID ea54bdc4-9bf9-4026-8837-a0c9faaa6bcc;
-					- m_targetType = 'T';
-					- m_direction = ' ';
-					- m_rpn = { CGIText 
-						- m_str = "p_net_backcen_itsCheckPoint";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_arrow = 2 268 361  268 353  ;
-					- m_anglePoint1 = 0 0 ;
-					- m_anglePoint2 = 0 0 ;
-					- m_line_style = 2;
-					- m_SourcePort = 31 37 ;
-					- m_TargetPort = 31 40 ;
-					- m_bShowSourceMultiplicity = 0;
-					- m_bShowSourceRole = 0;
-					- m_bShowTargetMultiplicity = 0;
-					- m_bShowTargetRole = 0;
-					- m_bShowLinkName = 0;
-					- m_sourceRole = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 2;
-						- m_bImplicitSetRectPoints = 0;
-					}
-					- m_targetRole = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 3;
-						- m_bImplicitSetRectPoints = 0;
-					}
-					- m_sourceMultiplicity = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 4;
-						- m_bImplicitSetRectPoints = 0;
-					}
-					- m_targetMultiplicity = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 5;
-						- m_bImplicitSetRectPoints = 0;
-					}
-				}
-				{ CGIObjectLink 
-					- _id = GUID 181d7290-8e35-4d18-ab56-e45130e8c457;
-					- _properties = { IPropertyContainer 
-						- Subjects = { IRPYRawContainer 
-							- size = 1;
-							- value = 
-							{ IPropertySubject 
-								- _Name = "General";
-								- Metaclasses = { IRPYRawContainer 
-									- size = 1;
-									- value = 
-									{ IPropertyMetaclass 
-										- _Name = "Graphics";
-										- Properties = { IRPYRawContainer 
-											- size = 1;
-											- value = 
-											{ IProperty 
-												- _Name = "ShowLabels";
-												- _Value = "False";
-												- _Type = Bool;
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-					- m_type = 80;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "IObjectLink";
-						- _filename = "sysSCADA.sbs";
-						- _subsystem = "sysSCADA";
-						- _class = "commNetwork";
-						- _name = "p_outnet_field_itsSingleAccessPoint";
-						- _id = GUID 06892cfd-4831-4353-b700-8b29094f8fc0;
-					}
-					- m_pParent = ;
-					- m_name = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_drawBehavior = 4096;
-					- m_bIsPreferencesInitialized = 1;
-					- m_pSource = GUID d567c70d-8fbb-467b-b32c-bd0ecfd734b3;
-					- m_sourceType = 'F';
-					- m_pTarget = GUID d5adb3f4-1355-4f3f-be85-ab9b32975f15;
-					- m_targetType = 'T';
-					- m_direction = ' ';
-					- m_rpn = { CGIText 
-						- m_str = "p_outnet_field_itsSingleAccessPoint";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_arrow = 2 248 154  248 140  ;
-					- m_anglePoint1 = 0 0 ;
-					- m_anglePoint2 = 0 0 ;
-					- m_line_style = 2;
-					- m_SourcePort = 32 40 ;
-					- m_TargetPort = 31 39 ;
-					- m_bShowSourceMultiplicity = 0;
-					- m_bShowSourceRole = 0;
-					- m_bShowTargetMultiplicity = 0;
-					- m_bShowTargetRole = 0;
-					- m_bShowLinkName = 0;
-					- m_sourceRole = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 2;
-						- m_bImplicitSetRectPoints = 0;
-					}
-					- m_targetRole = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 3;
-						- m_bImplicitSetRectPoints = 0;
-					}
-					- m_sourceMultiplicity = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 4;
-						- m_bImplicitSetRectPoints = 0;
-					}
-					- m_targetMultiplicity = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 5;
-						- m_bImplicitSetRectPoints = 0;
 					}
 				}
 				
@@ -7410,7 +6778,7 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 			}
 			- _name = "structurediagram_Field";
 			- _modifiedTimeWeak = 1.2.1990::0:0:0;
-			- _lastModifiedTime = "2.10.2016::20:46:26";
+			- _lastModifiedTime = "2.17.2016::16:10:17";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID 823a5431-74e2-4667-b460-151b2574e581;
 				- m_type = 0;
@@ -7434,7 +6802,7 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 				}
 				- m_drawBehavior = 0;
 				- m_bIsPreferencesInitialized = 0;
-				- elementList = 33;
+				- elementList = 31;
 				{ CGIClass 
 					- _id = GUID 2177f0b0-7d80-4867-9df0-37fa249b5a31;
 					- m_type = 78;
@@ -10704,166 +10072,6 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 						- m_nOrientationCtrlPt = 8;
 					}
 				}
-				{ CGIPortConnector 
-					- _id = GUID 38435694-a7a1-45ac-a14d-2a8d2895c332;
-					- m_type = 57;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "IPort";
-						- _filename = "securityPattern.sbs";
-						- _subsystem = "securityPattern";
-						- _class = "SingleAccessPoint";
-						- _name = "p_single_outnet";
-						- _id = GUID e960efd7-4c8e-404f-b2f3-e55bb5919fb4;
-					}
-					- m_pParent = GUID 1fcea063-6821-4097-987b-4f7769795f03;
-					- m_name = { CGIText 
-						- m_str = "p_single_outnet";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nVerticalSpacing = -19;
-						- m_nOrientationCtrlPt = 2;
-					}
-					- m_drawBehavior = 0;
-					- m_transform = -1.40151e-005 -10.6857 4.21387 -3.554e-005 -164.341 886.915 ;
-					- m_bIsPreferencesInitialized = 0;
-					- m_AdditionalLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nVerticalSpacing = -29;
-						- m_nOrientationCtrlPt = 2;
-					}
-					- m_position = 4 0 0  0 73  68 73  68 0  ;
-					- m_pInheritsFrom = { IHandle 
-						- _m2Class = "";
-					}
-					- m_nInheritanceMask = 0;
-					- m_SubType = 0;
-					- m_providedInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = 67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_requiredInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-				}
-				{ CGIPortConnector 
-					- _id = GUID cd36dd32-69b3-443b-8aa0-b7dcfa988953;
-					- m_type = 57;
-					- m_pModelObject = { IHandle 
-						- _m2Class = "IPort";
-						- _filename = "securityPattern.sbs";
-						- _subsystem = "securityPattern";
-						- _class = "checkPoint";
-						- _name = "p_check_outnet";
-						- _id = GUID d48b1643-ed0f-4163-a3e5-4518394d471d;
-					}
-					- m_pParent = GUID 6bc3b0fb-7df2-45da-a98e-52631ded4caf;
-					- m_name = { CGIText 
-						- m_str = "p_check_outnet";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nVerticalSpacing = -19;
-						- m_nOrientationCtrlPt = 2;
-					}
-					- m_drawBehavior = 0;
-					- m_transform = -1.31407e-005 -12.75 3.95099 -4.24057e-005 -150.137 1287.75 ;
-					- m_bIsPreferencesInitialized = 0;
-					- m_AdditionalLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nVerticalSpacing = -29;
-						- m_nOrientationCtrlPt = 2;
-					}
-					- m_position = 4 0 0  0 73  68 73  68 0  ;
-					- m_pInheritsFrom = { IHandle 
-						- _m2Class = "";
-					}
-					- m_nInheritanceMask = 0;
-					- m_SubType = 0;
-					- m_providedInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = 67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-					- m_requiredInterfaceLabel = { CGIText 
-						- m_str = "";
-						- m_style = "Arial" 10 0 0 0 1 ;
-						- m_color = { IColor 
-							- m_fgColor = 0;
-							- m_bgColor = 0;
-							- m_bgFlag = 0;
-						}
-						- m_position = 1 0 0  ;
-						- m_nIdent = 0;
-						- m_bImplicitSetRectPoints = 0;
-						- m_nHorizontalSpacing = -67;
-						- m_nVerticalSpacing = -25;
-						- m_nOrientationCtrlPt = 8;
-					}
-				}
 				
 				- m_access = 'Z';
 				- m_modified = 'N';
@@ -13742,7 +12950,7 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 			}
 		}
 	}
-	- weakCGTime = 2.10.2016::20:45:21;
+	- weakCGTime = 2.17.2016::16:9:59;
 	- strongCGTime = 1.28.2016::10:47:4;
 	- _defaultComposite = GUID 638546f5-202d-487c-b737-fbeec4b061e7;
 	- _eventsBaseID = -1;
@@ -13753,8 +12961,8 @@ I-Logix-RPY-Archive version 8.10.0 Java 6930133
 			- _id = GUID 638546f5-202d-487c-b737-fbeec4b061e7;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- _modifiedTimeWeak = 2.10.2016::19:53:22;
-			- weakCGTime = 2.10.2016::19:53:22;
+			- _modifiedTimeWeak = 2.10.2016::20:45:21;
+			- weakCGTime = 2.10.2016::20:45:21;
 			- strongCGTime = 1.28.2016::10:47:4;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 

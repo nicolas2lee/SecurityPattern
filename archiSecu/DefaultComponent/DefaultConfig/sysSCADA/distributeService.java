@@ -4,7 +4,7 @@
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: distributeService
-//!	Generated Date	: Wed, 10, Feb 2016 
+//!	Generated Date	: Wed, 17, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/sysSCADA/distributeService.java
 *********************************************************************/
 
@@ -27,7 +27,7 @@ import com.ibm.rational.rhapsody.animcom.animMessages.*;
 //## event distributeService() 
 public class distributeService extends RiJEvent implements AnimatedEvent {
     
-    public static final int distributeService_sysSCADA_id = 18632;		//## ignore 
+    public static final int distributeService_sysSCADA_id = 18629;		//## ignore 
     
     
     // Constructors

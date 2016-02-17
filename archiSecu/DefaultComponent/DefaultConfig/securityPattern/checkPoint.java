@@ -4,7 +4,7 @@
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: checkPoint
-//!	Generated Date	: Wed, 10, Feb 2016 
+//!	Generated Date	: Wed, 17, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/securityPattern/checkPoint.java
 *********************************************************************/
 
@@ -45,6 +45,10 @@ public class checkPoint implements RiJStateConcept, Animated {
     protected checkPoint.p_check_single_C p_check_single;		//## ignore 
     
     protected checkPoint.p_check_policy_C p_check_policy;		//## ignore 
+    
+    protected checkPoint.p_check_backSer_C p_check_backSer;		//## ignore 
+    
+    protected checkPoint.p_backCheck_single_C p_backCheck_single;		//## ignore 
     
     protected String Role;		//## attribute Role 
     
@@ -231,6 +235,48 @@ public class checkPoint implements RiJStateConcept, Animated {
     //## auto_generated 
     public void deleteP_check_policy() {
         p_check_policy=null;
+    }
+    
+    //## auto_generated 
+    public checkPoint.p_check_backSer_C getP_check_backSer() {
+        return p_check_backSer;
+    }
+    
+    //## auto_generated 
+    public checkPoint.p_check_backSer_C get_p_check_backSer() {
+        return p_check_backSer;
+    }
+    
+    //## auto_generated 
+    public checkPoint.p_check_backSer_C newP_check_backSer() {
+        p_check_backSer = new checkPoint.p_check_backSer_C();
+        return p_check_backSer;
+    }
+    
+    //## auto_generated 
+    public void deleteP_check_backSer() {
+        p_check_backSer=null;
+    }
+    
+    //## auto_generated 
+    public checkPoint.p_backCheck_single_C getP_backCheck_single() {
+        return p_backCheck_single;
+    }
+    
+    //## auto_generated 
+    public checkPoint.p_backCheck_single_C get_p_backCheck_single() {
+        return p_backCheck_single;
+    }
+    
+    //## auto_generated 
+    public checkPoint.p_backCheck_single_C newP_backCheck_single() {
+        p_backCheck_single = new checkPoint.p_backCheck_single_C();
+        return p_backCheck_single;
+    }
+    
+    //## auto_generated 
+    public void deleteP_backCheck_single() {
+        p_backCheck_single=null;
     }
     
     //## operation sendBackserviceToCheckpoint() 
@@ -518,6 +564,8 @@ public class checkPoint implements RiJStateConcept, Animated {
         p_check_right = newP_check_right();
         p_check_single = newP_check_single();
         p_check_policy = newP_check_policy();
+        p_check_backSer = newP_check_backSer();
+        p_backCheck_single = newP_backCheck_single();
         if(getP_check_protected() != null)
            getP_check_protected().connectCheckPoint(this);
         if(getP_check_right() != null)
@@ -526,6 +574,10 @@ public class checkPoint implements RiJStateConcept, Animated {
            getP_check_single().connectCheckPoint(this);
         if(getP_check_policy() != null)
            getP_check_policy().connectCheckPoint(this);
+        if(getP_check_backSer() != null)
+           getP_check_backSer().connectCheckPoint(this);
+        if(getP_backCheck_single() != null)
+           getP_backCheck_single().connectCheckPoint(this);
     }
     
     //## auto_generated 
@@ -1411,6 +1463,60 @@ public class checkPoint implements RiJStateConcept, Animated {
         
         //## auto_generated 
         public  p_check_policy_C() {
+        }
+        
+        /**
+         * @param part
+        */
+        //## operation connectCheckPoint(checkPoint) 
+        public void connectCheckPoint(checkPoint part) {
+            //#[ operation connectCheckPoint(checkPoint) 
+            InBound.setItsDefaultProvidedInterface(part);
+            InBound.setPort(this); // for IS_PORT macro support
+            
+            //#]
+        }
+        
+    }
+    /**
+    [[ * @see $See]]
+    [[ * @since $Since]]
+    */
+    //## ignore 
+    public class p_check_backSer_C extends RiJDefaultReactivePort {
+        
+        
+        // Constructors
+        
+        //## auto_generated 
+        public  p_check_backSer_C() {
+        }
+        
+        /**
+         * @param part
+        */
+        //## operation connectCheckPoint(checkPoint) 
+        public void connectCheckPoint(checkPoint part) {
+            //#[ operation connectCheckPoint(checkPoint) 
+            InBound.setItsDefaultProvidedInterface(part);
+            InBound.setPort(this); // for IS_PORT macro support
+            
+            //#]
+        }
+        
+    }
+    /**
+    [[ * @see $See]]
+    [[ * @since $Since]]
+    */
+    //## ignore 
+    public class p_backCheck_single_C extends RiJDefaultReactivePort {
+        
+        
+        // Constructors
+        
+        //## auto_generated 
+        public  p_backCheck_single_C() {
         }
         
         /**

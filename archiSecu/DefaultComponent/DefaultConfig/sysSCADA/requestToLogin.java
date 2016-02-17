@@ -3,9 +3,9 @@
 	Login		: guoxi
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
-	Model Element	: requestService
+	Model Element	: requestToLogin
 //!	Generated Date	: Wed, 17, Feb 2016 
-	File Path	: DefaultComponent/DefaultConfig/sysSCADA/requestService.java
+	File Path	: DefaultComponent/DefaultConfig/sysSCADA/requestToLogin.java
 *********************************************************************/
 
 package sysSCADA;
@@ -18,31 +18,36 @@ import com.ibm.rational.rhapsody.oxf.RiJEvent;
 import com.ibm.rational.rhapsody.animcom.animMessages.*;
 
 //----------------------------------------------------------------------------
-// sysSCADA/requestService.java                                                                  
+// sysSCADA/requestToLogin.java                                                                  
 //----------------------------------------------------------------------------
 
 //## package sysSCADA 
 
 
-//## event requestService() 
-public class requestService extends RiJEvent implements AnimatedEvent {
+//## event requestToLogin(String) 
+public class requestToLogin extends RiJEvent implements AnimatedEvent {
     
-    public static final int requestService_sysSCADA_id = 18626;		//## ignore 
+    public static final int requestToLogin_sysSCADA_id = 18643;		//## ignore 
     
+    public String userId;
     
     // Constructors
     
-    public  requestService() {
-        lId = requestService_sysSCADA_id;
+    public  requestToLogin() {
+        lId = requestToLogin_sysSCADA_id;
+    }
+    public  requestToLogin(String p_userId) {
+        lId = requestToLogin_sysSCADA_id;
+        userId = p_userId;
     }
     
     public boolean isTypeOf(long id) {
-        return (requestService_sysSCADA_id==id);
+        return (requestToLogin_sysSCADA_id==id);
     }
     
     //#[ ignore
     /** the animated event proxy */
-    public static AnimEventClass animClass = new AnimEventClass("sysSCADA.requestService");
+    public static AnimEventClass animClass = new AnimEventClass("sysSCADA.requestToLogin");
     /**  see com.ibm.rational.rhapsody.animation.AnimatedEvent interface */
     public Object getFieldValue(java.lang.reflect.Field f, Object userInstance) { 
          Object obj = null;
@@ -56,9 +61,11 @@ public class requestService extends RiJEvent implements AnimatedEvent {
     }
     /**  see com.ibm.rational.rhapsody.animation.AnimatedEvent interface */
     public void addAttributes(AnimAttributes msg) {      
+          msg.add("userId", userId);
     }
     public String toString() {
-          String s="requestService(";      
+          String s="requestToLogin(";      
+          s += "userId=" + AnimInstance.animToString(userId) + " ";
           s += ")";
           return s;
     }
@@ -66,6 +73,6 @@ public class requestService extends RiJEvent implements AnimatedEvent {
     
 }
 /*********************************************************************
-	File Path	: DefaultComponent/DefaultConfig/sysSCADA/requestService.java
+	File Path	: DefaultComponent/DefaultConfig/sysSCADA/requestToLogin.java
 *********************************************************************/
 

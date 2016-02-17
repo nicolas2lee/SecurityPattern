@@ -3,9 +3,9 @@
 	Login		: guoxi
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
-	Model Element	: requestService
+	Model Element	: toCheckPoint
 //!	Generated Date	: Wed, 17, Feb 2016 
-	File Path	: DefaultComponent/DefaultConfig/sysSCADA/requestService.java
+	File Path	: DefaultComponent/DefaultConfig/sysSCADA/toCheckPoint.java
 *********************************************************************/
 
 package sysSCADA;
@@ -18,31 +18,36 @@ import com.ibm.rational.rhapsody.oxf.RiJEvent;
 import com.ibm.rational.rhapsody.animcom.animMessages.*;
 
 //----------------------------------------------------------------------------
-// sysSCADA/requestService.java                                                                  
+// sysSCADA/toCheckPoint.java                                                                  
 //----------------------------------------------------------------------------
 
 //## package sysSCADA 
 
 
-//## event requestService() 
-public class requestService extends RiJEvent implements AnimatedEvent {
+//## event toCheckPoint(String) 
+public class toCheckPoint extends RiJEvent implements AnimatedEvent {
     
-    public static final int requestService_sysSCADA_id = 18626;		//## ignore 
+    public static final int toCheckPoint_sysSCADA_id = 18636;		//## ignore 
     
+    public String policy;
     
     // Constructors
     
-    public  requestService() {
-        lId = requestService_sysSCADA_id;
+    public  toCheckPoint() {
+        lId = toCheckPoint_sysSCADA_id;
+    }
+    public  toCheckPoint(String p_policy) {
+        lId = toCheckPoint_sysSCADA_id;
+        policy = p_policy;
     }
     
     public boolean isTypeOf(long id) {
-        return (requestService_sysSCADA_id==id);
+        return (toCheckPoint_sysSCADA_id==id);
     }
     
     //#[ ignore
     /** the animated event proxy */
-    public static AnimEventClass animClass = new AnimEventClass("sysSCADA.requestService");
+    public static AnimEventClass animClass = new AnimEventClass("sysSCADA.toCheckPoint");
     /**  see com.ibm.rational.rhapsody.animation.AnimatedEvent interface */
     public Object getFieldValue(java.lang.reflect.Field f, Object userInstance) { 
          Object obj = null;
@@ -56,9 +61,11 @@ public class requestService extends RiJEvent implements AnimatedEvent {
     }
     /**  see com.ibm.rational.rhapsody.animation.AnimatedEvent interface */
     public void addAttributes(AnimAttributes msg) {      
+          msg.add("policy", policy);
     }
     public String toString() {
-          String s="requestService(";      
+          String s="toCheckPoint(";      
+          s += "policy=" + AnimInstance.animToString(policy) + " ";
           s += ")";
           return s;
     }
@@ -66,6 +73,6 @@ public class requestService extends RiJEvent implements AnimatedEvent {
     
 }
 /*********************************************************************
-	File Path	: DefaultComponent/DefaultConfig/sysSCADA/requestService.java
+	File Path	: DefaultComponent/DefaultConfig/sysSCADA/toCheckPoint.java
 *********************************************************************/
 

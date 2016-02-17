@@ -4,7 +4,7 @@
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: FieldService
-//!	Generated Date	: Wed, 10, Feb 2016 
+//!	Generated Date	: Wed, 17, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/sysSCADA/FieldService.java
 *********************************************************************/
 
@@ -38,7 +38,9 @@ public class FieldService implements RiJStateConcept, Animated {
     
     public Reactive reactive;		//## ignore 
     
-    protected FieldService.p_ser_field_C p_ser_field;		//## ignore 
+    protected FieldService.p_ser_loccon_C p_ser_loccon;		//## ignore 
+    
+    protected FieldService.p_ser_outnet_C p_ser_outnet;		//## ignore 
     
     protected FieldUnit itsFieldUnit;		//## link itsFieldUnit 
     
@@ -123,24 +125,45 @@ public class FieldService implements RiJStateConcept, Animated {
     }
     
     //## auto_generated 
-    public FieldService.p_ser_field_C getP_ser_field() {
-        return p_ser_field;
+    public FieldService.p_ser_loccon_C getP_ser_loccon() {
+        return p_ser_loccon;
     }
     
     //## auto_generated 
-    public FieldService.p_ser_field_C get_p_ser_field() {
-        return p_ser_field;
+    public FieldService.p_ser_loccon_C get_p_ser_loccon() {
+        return p_ser_loccon;
     }
     
     //## auto_generated 
-    public FieldService.p_ser_field_C newP_ser_field() {
-        p_ser_field = new FieldService.p_ser_field_C();
-        return p_ser_field;
+    public FieldService.p_ser_loccon_C newP_ser_loccon() {
+        p_ser_loccon = new FieldService.p_ser_loccon_C();
+        return p_ser_loccon;
     }
     
     //## auto_generated 
-    public void deleteP_ser_field() {
-        p_ser_field=null;
+    public void deleteP_ser_loccon() {
+        p_ser_loccon=null;
+    }
+    
+    //## auto_generated 
+    public FieldService.p_ser_outnet_C getP_ser_outnet() {
+        return p_ser_outnet;
+    }
+    
+    //## auto_generated 
+    public FieldService.p_ser_outnet_C get_p_ser_outnet() {
+        return p_ser_outnet;
+    }
+    
+    //## auto_generated 
+    public FieldService.p_ser_outnet_C newP_ser_outnet() {
+        p_ser_outnet = new FieldService.p_ser_outnet_C();
+        return p_ser_outnet;
+    }
+    
+    //## auto_generated 
+    public void deleteP_ser_outnet() {
+        p_ser_outnet=null;
     }
     
     //## operation sendbackServiceInfo() 
@@ -151,7 +174,7 @@ public class FieldService implements RiJStateConcept, Animated {
                });
         
         //#[ operation sendbackServiceInfo() 
-        getP_ser_field().gen (new backServiceInfo());
+        getP_ser_outnet().gen (new backServiceInfo());
         //#]
         }
         finally {
@@ -204,9 +227,12 @@ public class FieldService implements RiJStateConcept, Animated {
     
     //## auto_generated 
     protected void initRelations(RiJThread p_thread) {
-        p_ser_field = newP_ser_field();
-        if(getP_ser_field() != null)
-           getP_ser_field().connectFieldService(this);
+        p_ser_loccon = newP_ser_loccon();
+        p_ser_outnet = newP_ser_outnet();
+        if(getP_ser_loccon() != null)
+           getP_ser_loccon().connectFieldService(this);
+        if(getP_ser_outnet() != null)
+           getP_ser_outnet().connectFieldService(this);
     }
     
     //## auto_generated 
@@ -477,13 +503,40 @@ public class FieldService implements RiJStateConcept, Animated {
     [[ * @since $Since]]
     */
     //## ignore 
-    public class p_ser_field_C extends RiJDefaultReactivePort {
+    public class p_ser_loccon_C extends RiJDefaultReactivePort {
         
         
         // Constructors
         
         //## auto_generated 
-        public  p_ser_field_C() {
+        public  p_ser_loccon_C() {
+        }
+        
+        /**
+         * @param part
+        */
+        //## operation connectFieldService(FieldService) 
+        public void connectFieldService(FieldService part) {
+            //#[ operation connectFieldService(FieldService) 
+            InBound.setItsDefaultProvidedInterface(part);
+            InBound.setPort(this); // for IS_PORT macro support
+            
+            //#]
+        }
+        
+    }
+    /**
+    [[ * @see $See]]
+    [[ * @since $Since]]
+    */
+    //## ignore 
+    public class p_ser_outnet_C extends RiJDefaultReactivePort {
+        
+        
+        // Constructors
+        
+        //## auto_generated 
+        public  p_ser_outnet_C() {
         }
         
         /**

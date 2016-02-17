@@ -5,7 +5,7 @@ I-Logix-RPY-Archive version 8.10.0 * 6930133
 	}
 	- isLoadOnDemand = 0;
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 3;
+		- size = 5;
 		- value = 
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -16,22 +16,78 @@ I-Logix-RPY-Archive version 8.10.0 * 6930133
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
 				- m_ptMaxPositionY = -31;
-				- m_nLeft = 208;
-				- m_nTop = 208;
-				- m_nRight = 823;
-				- m_nBottom = 701;
+				- m_nLeft = 78;
+				- m_nTop = 78;
+				- m_nRight = 628;
+				- m_nBottom = 549;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
-				- _m2Class = "IDiagram";
-				- _filename = "sysSCADA.sbs";
-				- _subsystem = "sysSCADA";
-				- _class = "";
-				- _name = "SCADADiagCls";
-				- _id = GUID 699188b7-ce55-4947-875e-76f8a29580ae;
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "securityPattern.sbs";
+				- _subsystem = "securityPattern";
+				- _class = "Rights";
+				- _name = "StatechartDiagram";
+				- _id = GUID b0ef8d33-3f57-43d5-9573-edc8e064a9d6;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 693 680 ;
+			- _DownRight = 737 658 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 234;
+				- m_nTop = 234;
+				- m_nRight = 826;
+				- m_nBottom = 769;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "securityPattern.sbs";
+				- _subsystem = "securityPattern";
+				- _class = "SingleAccessPoint";
+				- _name = "StatechartDiagram";
+				- _id = GUID 82f48b37-c26d-4ac7-a33a-80a38edc079b;
+			}
+			- _UpLeft = 10 0 ;
+			- _DownRight = 565 475 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 2;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 26;
+				- m_nTop = 26;
+				- m_nRight = 656;
+				- m_nBottom = 497;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "securityPattern.sbs";
+				- _subsystem = "securityPattern";
+				- _class = "checkPoint";
+				- _name = "StatechartDiagram";
+				- _id = GUID 544a85b9-3479-4c14-a441-a0e98c812120;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 593 411 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 1;
 		}
@@ -58,10 +114,10 @@ I-Logix-RPY-Archive version 8.10.0 * 6930133
 				- _name = "centerControllerSturct";
 				- _id = GUID 48227c4e-bb72-417e-a9fd-f9c72669db86;
 			}
-			- _UpLeft = -14 0 ;
-			- _DownRight = 564 433 ;
+			- _UpLeft = -14 76 ;
+			- _DownRight = 564 509 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 0;
+			- m_nDiagramIndex = 4;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -72,24 +128,24 @@ I-Logix-RPY-Archive version 8.10.0 * 6930133
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
 				- m_ptMaxPositionY = -31;
-				- m_nLeft = 156;
-				- m_nTop = 156;
-				- m_nRight = 771;
-				- m_nBottom = 649;
+				- m_nLeft = 130;
+				- m_nTop = 130;
+				- m_nRight = 785;
+				- m_nBottom = 615;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
-				- _m2Class = "IStructureDiagram";
+				- _m2Class = "IStateChartDiagram";
 				- _filename = "sysSCADA.sbs";
 				- _subsystem = "sysSCADA";
-				- _class = "commNetwork";
-				- _name = "netStruct";
-				- _id = GUID 71779158-1784-41a1-8c85-ce80229068c9;
+				- _class = "centerController";
+				- _name = "StatechartDiagram";
+				- _id = GUID 51458e10-f7e2-4468-9c22-55911d21322c;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 578 433 ;
+			- _UpLeft = 273 0 ;
+			- _DownRight = 891 425 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 2;
+			- m_nDiagramIndex = 3;
 		}
 	}
 	- _fullName = "U:\\semestre5\\uv5.6\\SecurityPattern\\archiSecu\\archiSecu";

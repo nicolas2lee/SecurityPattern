@@ -4,7 +4,7 @@
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: commNetwork
-//!	Generated Date	: Wed, 10, Feb 2016 
+//!	Generated Date	: Wed, 17, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/sysSCADA/commNetwork.java
 *********************************************************************/
 
@@ -50,22 +50,38 @@ public class commNetwork implements RiJStateConcept, Animated {
     
     protected commNetwork.p_net_field_C p_net_field;		//## ignore 
     
+    protected commNetwork.p_outnet_field_C p_outnet_field;		//## ignore 
+    
+    protected commNetwork.p_net_backcen_C p_net_backcen;		//## ignore 
+    
     protected centerController itsCenterController;		//## link itsCenterController 
     
     protected checkPoint itsCheckPoint;		//## classInstance itsCheckPoint 
+    
+    protected checkPoint itsCheckPoint_0;		//## classInstance itsCheckPoint_0 
     
     protected FieldUnit itsFieldUnit;		//## link itsFieldUnit 
     
     protected Rights itsRights;		//## classInstance itsRights 
     
+    protected Rights itsRights_0;		//## classInstance itsRights_0 
+    
     protected SecurityPolicy itsSecurityPolicy;		//## classInstance itsSecurityPolicy 
     
+    protected SecurityPolicy itsSecurityPolicy_0;		//## classInstance itsSecurityPolicy_0 
+    
     protected SingleAccessPoint itsSingleAccessPoint;		//## classInstance itsSingleAccessPoint 
+    
+    protected SingleAccessPoint itsSingleAccessPoint_0;		//## classInstance itsSingleAccessPoint_0 
     
     //#[ ignore 
     public static final int RiJNonState=0;
     public static final int sentToLocal=1;
     public static final int Idle=2;
+    public static final int EnterSingleAccessNet=3;
+    public static final int CkeckedPointNet=4;
+    public static final int CheckedRightsNet=5;
+    public static final int CheckedPolicyNet=6;
     //#]
     protected int rootState_subState;		//## ignore 
     
@@ -182,6 +198,48 @@ public class commNetwork implements RiJStateConcept, Animated {
         p_net_field=null;
     }
     
+    //## auto_generated 
+    public commNetwork.p_outnet_field_C getP_outnet_field() {
+        return p_outnet_field;
+    }
+    
+    //## auto_generated 
+    public commNetwork.p_outnet_field_C get_p_outnet_field() {
+        return p_outnet_field;
+    }
+    
+    //## auto_generated 
+    public commNetwork.p_outnet_field_C newP_outnet_field() {
+        p_outnet_field = new commNetwork.p_outnet_field_C();
+        return p_outnet_field;
+    }
+    
+    //## auto_generated 
+    public void deleteP_outnet_field() {
+        p_outnet_field=null;
+    }
+    
+    //## auto_generated 
+    public commNetwork.p_net_backcen_C getP_net_backcen() {
+        return p_net_backcen;
+    }
+    
+    //## auto_generated 
+    public commNetwork.p_net_backcen_C get_p_net_backcen() {
+        return p_net_backcen;
+    }
+    
+    //## auto_generated 
+    public commNetwork.p_net_backcen_C newP_net_backcen() {
+        p_net_backcen = new commNetwork.p_net_backcen_C();
+        return p_net_backcen;
+    }
+    
+    //## auto_generated 
+    public void deleteP_net_backcen() {
+        p_net_backcen=null;
+    }
+    
     //## operation sendLocalToCenter() 
     public void sendLocalToCenter() {
         try {
@@ -190,7 +248,7 @@ public class commNetwork implements RiJStateConcept, Animated {
                });
         
         //#[ operation sendLocalToCenter() 
-        getP_net_cen().gen(new sendToUser());
+        getP_net_backcen().gen(new receivedBackInfo());
         //#]
         }
         finally {
@@ -277,6 +335,24 @@ public class commNetwork implements RiJStateConcept, Animated {
     }
     
     //## auto_generated 
+    public checkPoint getItsCheckPoint_0() {
+        return itsCheckPoint_0;
+    }
+    
+    //## auto_generated 
+    public checkPoint newItsCheckPoint_0(RiJThread p_thread) {
+        itsCheckPoint_0 = new checkPoint(p_thread);
+        animInstance().notifyRelationAdded("itsCheckPoint_0", itsCheckPoint_0);
+        return itsCheckPoint_0;
+    }
+    
+    //## auto_generated 
+    public void deleteItsCheckPoint_0() {
+        animInstance().notifyRelationRemoved("itsCheckPoint_0", itsCheckPoint_0);
+        itsCheckPoint_0=null;
+    }
+    
+    //## auto_generated 
     public FieldUnit getItsFieldUnit() {
         return itsFieldUnit;
     }
@@ -337,6 +413,24 @@ public class commNetwork implements RiJStateConcept, Animated {
     }
     
     //## auto_generated 
+    public Rights getItsRights_0() {
+        return itsRights_0;
+    }
+    
+    //## auto_generated 
+    public Rights newItsRights_0(RiJThread p_thread) {
+        itsRights_0 = new Rights(p_thread);
+        animInstance().notifyRelationAdded("itsRights_0", itsRights_0);
+        return itsRights_0;
+    }
+    
+    //## auto_generated 
+    public void deleteItsRights_0() {
+        animInstance().notifyRelationRemoved("itsRights_0", itsRights_0);
+        itsRights_0=null;
+    }
+    
+    //## auto_generated 
     public SecurityPolicy getItsSecurityPolicy() {
         return itsSecurityPolicy;
     }
@@ -352,6 +446,24 @@ public class commNetwork implements RiJStateConcept, Animated {
     public void deleteItsSecurityPolicy() {
         animInstance().notifyRelationRemoved("itsSecurityPolicy", itsSecurityPolicy);
         itsSecurityPolicy=null;
+    }
+    
+    //## auto_generated 
+    public SecurityPolicy getItsSecurityPolicy_0() {
+        return itsSecurityPolicy_0;
+    }
+    
+    //## auto_generated 
+    public SecurityPolicy newItsSecurityPolicy_0(RiJThread p_thread) {
+        itsSecurityPolicy_0 = new SecurityPolicy(p_thread);
+        animInstance().notifyRelationAdded("itsSecurityPolicy_0", itsSecurityPolicy_0);
+        return itsSecurityPolicy_0;
+    }
+    
+    //## auto_generated 
+    public void deleteItsSecurityPolicy_0() {
+        animInstance().notifyRelationRemoved("itsSecurityPolicy_0", itsSecurityPolicy_0);
+        itsSecurityPolicy_0=null;
     }
     
     //## auto_generated 
@@ -373,13 +485,37 @@ public class commNetwork implements RiJStateConcept, Animated {
     }
     
     //## auto_generated 
+    public SingleAccessPoint getItsSingleAccessPoint_0() {
+        return itsSingleAccessPoint_0;
+    }
+    
+    //## auto_generated 
+    public SingleAccessPoint newItsSingleAccessPoint_0(RiJThread p_thread) {
+        itsSingleAccessPoint_0 = new SingleAccessPoint(p_thread);
+        animInstance().notifyRelationAdded("itsSingleAccessPoint_0", itsSingleAccessPoint_0);
+        return itsSingleAccessPoint_0;
+    }
+    
+    //## auto_generated 
+    public void deleteItsSingleAccessPoint_0() {
+        animInstance().notifyRelationRemoved("itsSingleAccessPoint_0", itsSingleAccessPoint_0);
+        itsSingleAccessPoint_0=null;
+    }
+    
+    //## auto_generated 
     protected void initRelations(RiJThread p_thread) {
         p_net_cen = newP_net_cen();
         p_net_field = newP_net_field();
+        p_outnet_field = newP_outnet_field();
+        p_net_backcen = newP_net_backcen();
         itsCheckPoint = newItsCheckPoint(p_thread);
+        itsCheckPoint_0 = newItsCheckPoint_0(p_thread);
         itsRights = newItsRights(p_thread);
+        itsRights_0 = newItsRights_0(p_thread);
         itsSecurityPolicy = newItsSecurityPolicy(p_thread);
+        itsSecurityPolicy_0 = newItsSecurityPolicy_0(p_thread);
         itsSingleAccessPoint = newItsSingleAccessPoint(p_thread);
+        itsSingleAccessPoint_0 = newItsSingleAccessPoint_0(p_thread);
         {
             
             itsSingleAccessPoint.getP_single_check().setItsDefaultRequiredInterface(itsCheckPoint.getP_check_single().getItsDefaultProvidedInterface());
@@ -418,22 +554,82 @@ public class commNetwork implements RiJStateConcept, Animated {
         }
         {
             
-            getP_net_field().setItsDefaultProvidedInterface(itsCheckPoint.getP_check_protected().getItsDefaultProvidedInterface());
+            itsSingleAccessPoint_0.getP_single_check().setItsDefaultRequiredInterface(itsCheckPoint_0.getP_check_single().getItsDefaultProvidedInterface());
             
         }{
             
-            itsCheckPoint.getP_check_protected().setItsDefaultRequiredInterface(getP_net_field().getItsDefaultRequiredInterface());
+            itsCheckPoint_0.getP_check_single().setItsDefaultRequiredInterface(itsSingleAccessPoint_0.getP_single_check().getItsDefaultProvidedInterface());
             
         }
+        {
+            
+            itsCheckPoint_0.getP_check_policy().setItsDefaultRequiredInterface(itsSecurityPolicy_0.getP_policy_check().getItsDefaultProvidedInterface());
+            
+        }{
+            
+            itsSecurityPolicy_0.getP_policy_check().setItsDefaultRequiredInterface(itsCheckPoint_0.getP_check_policy().getItsDefaultProvidedInterface());
+            
+        }
+        {
+            
+            itsCheckPoint_0.getP_check_right().setItsDefaultRequiredInterface(itsRights_0.getP_right_check().getItsDefaultProvidedInterface());
+            
+        }{
+            
+            itsRights_0.getP_right_check().setItsDefaultRequiredInterface(itsCheckPoint_0.getP_check_right().getItsDefaultProvidedInterface());
+            
+        }
+        {
+            
+            getP_net_field().setItsDefaultProvidedInterface(itsCheckPoint_0.getP_check_protected().getItsDefaultProvidedInterface());
+            
+        }{
+            
+            itsCheckPoint_0.getP_check_protected().setItsDefaultRequiredInterface(getP_net_field().getItsDefaultRequiredInterface());
+            
+        }
+        {
+            
+            getP_net_cen().setItsDefaultProvidedInterface(itsSingleAccessPoint_0.getP_single_user().getItsDefaultProvidedInterface());
+            
+        }{
+            
+            itsSingleAccessPoint_0.getP_single_user().setItsDefaultRequiredInterface(getP_net_cen().getItsDefaultRequiredInterface());
+            
+        }
+        {
+            
+            getP_outnet_field().setItsDefaultProvidedInterface(itsSingleAccessPoint_0.getP_backSingle_HMI().getItsDefaultProvidedInterface());
+            
+        }{
+            
+            itsSingleAccessPoint_0.getP_backSingle_HMI().setItsDefaultRequiredInterface(getP_outnet_field().getItsDefaultRequiredInterface());
+            
+        }
+        {
+            
+            getP_outnet_field().setItsDefaultProvidedInterface(itsSingleAccessPoint.getP_backSingle_HMI().getItsDefaultProvidedInterface());
+            
+        }{
+            
+            itsSingleAccessPoint.getP_backSingle_HMI().setItsDefaultRequiredInterface(getP_outnet_field().getItsDefaultRequiredInterface());
+            
+        }
+        if(getP_net_backcen() != null)
+           getP_net_backcen().connectCommNetwork(this);
     }
     
     //## auto_generated 
     public boolean startBehavior() {
         boolean done = true;
         done &= itsCheckPoint.startBehavior();
+        done &= itsCheckPoint_0.startBehavior();
         done &= itsRights.startBehavior();
+        done &= itsRights_0.startBehavior();
         done &= itsSecurityPolicy.startBehavior();
+        done &= itsSecurityPolicy_0.startBehavior();
         done &= itsSingleAccessPoint.startBehavior();
+        done &= itsSingleAccessPoint_0.startBehavior();
         done &= reactive.startBehavior();
         return done;
     }
@@ -482,6 +678,26 @@ public class commNetwork implements RiJStateConcept, Animated {
                     sentToLocal_add(animStates);
                 }
                 break;
+                case EnterSingleAccessNet:
+                {
+                    EnterSingleAccessNet_add(animStates);
+                }
+                break;
+                case CkeckedPointNet:
+                {
+                    CkeckedPointNet_add(animStates);
+                }
+                break;
+                case CheckedPolicyNet:
+                {
+                    CheckedPolicyNet_add(animStates);
+                }
+                break;
+                case CheckedRightsNet:
+                {
+                    CheckedRightsNet_add(animStates);
+                }
+                break;
                 default:
                     break;
             }
@@ -509,6 +725,26 @@ public class commNetwork implements RiJStateConcept, Animated {
                     res = sentToLocal_takeEvent(id);
                 }
                 break;
+                case EnterSingleAccessNet:
+                {
+                    res = EnterSingleAccessNet_takeEvent(id);
+                }
+                break;
+                case CkeckedPointNet:
+                {
+                    res = CkeckedPointNet_takeEvent(id);
+                }
+                break;
+                case CheckedPolicyNet:
+                {
+                    res = CheckedPolicyNet_takeEvent(id);
+                }
+                break;
+                case CheckedRightsNet:
+                {
+                    res = CheckedRightsNet_takeEvent(id);
+                }
+                break;
                 default:
                     break;
             }
@@ -525,10 +761,54 @@ public class commNetwork implements RiJStateConcept, Animated {
             animStates.add("ROOT.Idle");
         }
         
+        //## statechart_method 
+        public void EnterSingleAccessNet_add(AnimStates animStates) {
+            animStates.add("ROOT.EnterSingleAccessNet");
+        }
+        
+        //## statechart_method 
+        public void CkeckedPointNet_add(AnimStates animStates) {
+            animStates.add("ROOT.CkeckedPointNet");
+        }
+        
+        //## statechart_method 
+        public void CheckedRightsNet_add(AnimStates animStates) {
+            animStates.add("ROOT.CheckedRightsNet");
+        }
+        
+        //## statechart_method 
+        public void CheckedPolicyNet_add(AnimStates animStates) {
+            animStates.add("ROOT.CheckedPolicyNet");
+        }
+        
         //## auto_generated 
         protected void initStatechart() {
             rootState_subState = RiJNonState;
             rootState_active = RiJNonState;
+        }
+        
+        //## statechart_method 
+        public void CheckedPolicyNet_entDef() {
+            CheckedPolicyNet_enter();
+        }
+        
+        //## statechart_method 
+        public int CkeckedPointNet_takeEvent(short id) {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            if(event.isTypeOf(toCheckPolicyNet.toCheckPolicyNet_sysSCADA_id))
+                {
+                    res = CkeckedPointNetTaketoCheckPolicyNet();
+                }
+            else if(event.isTypeOf(recieveFromCenter.recieveFromCenter_sysSCADA_id))
+                {
+                    res = CkeckedPointNetTakerecieveFromCenter();
+                }
+            else if(event.isTypeOf(toCheckRightsNet.toCheckRightsNet_sysSCADA_id))
+                {
+                    res = CkeckedPointNetTaketoCheckRightsNet();
+                }
+            
+            return res;
         }
         
         //## statechart_method 
@@ -538,18 +818,102 @@ public class commNetwork implements RiJStateConcept, Animated {
         }
         
         //## statechart_method 
+        public void CheckedPolicyNet_exit() {
+            CheckedPolicyNetExit();
+            animInstance().notifyStateExited("ROOT.CheckedPolicyNet");
+        }
+        
+        //## statechart_method 
+        public int CheckedRightsNetTakereturnNetRights() {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            animInstance().notifyTransitionStarted("8");
+            CheckedRightsNet_exit();
+            CkeckedPointNet_entDef();
+            animInstance().notifyTransitionEnded("8");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
+            return res;
+        }
+        
+        //## statechart_method 
+        public int CkeckedPointNetTakerecieveFromCenter() {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            animInstance().notifyTransitionStarted("1");
+            CkeckedPointNet_exit();
+            //#[ transition 1 
+            sendToField();
+            //#]
+            sentToLocal_entDef();
+            animInstance().notifyTransitionEnded("1");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
+            return res;
+        }
+        
+        //## statechart_method 
+        public void CheckedRightsNetEnter() {
+        }
+        
+        //## statechart_method 
+        public void CkeckedPointNet_enter() {
+            animInstance().notifyStateEntered("ROOT.CkeckedPointNet");
+            rootState_subState = CkeckedPointNet;
+            rootState_active = CkeckedPointNet;
+            CkeckedPointNetEnter();
+        }
+        
+        //## statechart_method 
+        public void CheckedPolicyNet_enter() {
+            animInstance().notifyStateEntered("ROOT.CheckedPolicyNet");
+            rootState_subState = CheckedPolicyNet;
+            rootState_active = CheckedPolicyNet;
+            CheckedPolicyNetEnter();
+        }
+        
+        //## statechart_method 
+        public void EnterSingleAccessNetExit() {
+        }
+        
+        //## statechart_method 
+        public void CheckedRightsNetExit() {
+        }
+        
+        //## statechart_method 
         public void sentToLocal_entDef() {
             sentToLocal_enter();
         }
         
         //## statechart_method 
+        public void CheckedRightsNet_exit() {
+            CheckedRightsNetExit();
+            animInstance().notifyStateExited("ROOT.CheckedRightsNet");
+        }
+        
+        //## statechart_method 
+        public void EnterSingleAccessNet_enter() {
+            animInstance().notifyStateEntered("ROOT.EnterSingleAccessNet");
+            rootState_subState = EnterSingleAccessNet;
+            rootState_active = EnterSingleAccessNet;
+            EnterSingleAccessNetEnter();
+        }
+        
+        //## statechart_method 
         public int Idle_takeEvent(short id) {
             int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
-            if(event.isTypeOf(recieveFromCenter.recieveFromCenter_sysSCADA_id))
+            if(event.isTypeOf(requestToAccessNet.requestToAccessNet_sysSCADA_id))
                 {
-                    res = IdleTakerecieveFromCenter();
+                    res = IdleTakerequestToAccessNet();
                 }
             
+            return res;
+        }
+        
+        //## statechart_method 
+        public int IdleTakerequestToAccessNet() {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            animInstance().notifyTransitionStarted("3");
+            Idle_exit();
+            EnterSingleAccessNet_entDef();
+            animInstance().notifyTransitionEnded("3");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
             return res;
         }
         
@@ -559,6 +923,37 @@ public class commNetwork implements RiJStateConcept, Animated {
             rootState_subState = Idle;
             rootState_active = Idle;
             IdleEnter();
+        }
+        
+        //## statechart_method 
+        public int CheckedPolicyNet_takeEvent(short id) {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            if(event.isTypeOf(ReturnNetPolicy.ReturnNetPolicy_sysSCADA_id))
+                {
+                    res = CheckedPolicyNetTakeReturnNetPolicy();
+                }
+            
+            return res;
+        }
+        
+        //## statechart_method 
+        public void CkeckedPointNetExit() {
+        }
+        
+        //## statechart_method 
+        public int EnterSingleAccessNet_takeEvent(short id) {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            if(event.isTypeOf(toCheckPointNet.toCheckPointNet_sysSCADA_id))
+                {
+                    res = EnterSingleAccessNetTaketoCheckPointNet();
+                }
+            
+            return res;
+        }
+        
+        //## statechart_method 
+        public void EnterSingleAccessNet_entDef() {
+            EnterSingleAccessNet_enter();
         }
         
         //## statechart_method 
@@ -587,6 +982,21 @@ public class commNetwork implements RiJStateConcept, Animated {
         }
         
         //## statechart_method 
+        public void CheckedPolicyNetExit() {
+        }
+        
+        //## statechart_method 
+        public int CkeckedPointNetTaketoCheckRightsNet() {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            animInstance().notifyTransitionStarted("6");
+            CkeckedPointNet_exit();
+            CheckedRightsNet_entDef();
+            animInstance().notifyTransitionEnded("6");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
+            return res;
+        }
+        
+        //## statechart_method 
         public void IdleEnter() {
         }
         
@@ -595,17 +1005,15 @@ public class commNetwork implements RiJStateConcept, Animated {
         }
         
         //## statechart_method 
-        public int IdleTakerecieveFromCenter() {
-            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
-            animInstance().notifyTransitionStarted("1");
-            Idle_exit();
-            //#[ transition 1 
-            sendToField();
-            //#]
-            sentToLocal_entDef();
-            animInstance().notifyTransitionEnded("1");
-            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
-            return res;
+        public void CheckedRightsNet_enter() {
+            animInstance().notifyStateEntered("ROOT.CheckedRightsNet");
+            rootState_subState = CheckedRightsNet;
+            rootState_active = CheckedRightsNet;
+            CheckedRightsNetEnter();
+        }
+        
+        //## statechart_method 
+        public void EnterSingleAccessNetEnter() {
         }
         
         //## statechart_method 
@@ -616,9 +1024,51 @@ public class commNetwork implements RiJStateConcept, Animated {
         }
         
         //## statechart_method 
+        public int CheckedRightsNet_takeEvent(short id) {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            if(event.isTypeOf(returnNetRights.returnNetRights_sysSCADA_id))
+                {
+                    res = CheckedRightsNetTakereturnNetRights();
+                }
+            
+            return res;
+        }
+        
+        //## statechart_method 
+        public int CheckedPolicyNetTakeReturnNetPolicy() {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            animInstance().notifyTransitionStarted("7");
+            CheckedPolicyNet_exit();
+            CkeckedPointNet_entDef();
+            animInstance().notifyTransitionEnded("7");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
+            return res;
+        }
+        
+        //## statechart_method 
+        public void CheckedRightsNet_entDef() {
+            CheckedRightsNet_enter();
+        }
+        
+        //## statechart_method 
+        public void CkeckedPointNetEnter() {
+        }
+        
+        //## statechart_method 
         public void Idle_exit() {
             IdleExit();
             animInstance().notifyStateExited("ROOT.Idle");
+        }
+        
+        //## statechart_method 
+        public void CkeckedPointNet_entDef() {
+            CkeckedPointNet_enter();
+        }
+        
+        //## statechart_method 
+        public void EnterSingleAccessNet_exit() {
+            EnterSingleAccessNetExit();
+            animInstance().notifyStateExited("ROOT.EnterSingleAccessNet");
         }
         
         //## statechart_method 
@@ -652,6 +1102,38 @@ public class commNetwork implements RiJStateConcept, Animated {
         
         //## statechart_method 
         public void rootStateExit() {
+        }
+        
+        //## statechart_method 
+        public void CheckedPolicyNetEnter() {
+        }
+        
+        //## statechart_method 
+        public int CkeckedPointNetTaketoCheckPolicyNet() {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            animInstance().notifyTransitionStarted("5");
+            CkeckedPointNet_exit();
+            CheckedPolicyNet_entDef();
+            animInstance().notifyTransitionEnded("5");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
+            return res;
+        }
+        
+        //## statechart_method 
+        public void CkeckedPointNet_exit() {
+            CkeckedPointNetExit();
+            animInstance().notifyStateExited("ROOT.CkeckedPointNet");
+        }
+        
+        //## statechart_method 
+        public int EnterSingleAccessNetTaketoCheckPointNet() {
+            int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
+            animInstance().notifyTransitionStarted("4");
+            EnterSingleAccessNet_exit();
+            CkeckedPointNet_entDef();
+            animInstance().notifyTransitionEnded("4");
+            res = RiJStateReactive.TAKE_EVENT_COMPLETE;
+            return res;
         }
         
         //## statechart_method 
@@ -722,6 +1204,48 @@ public class commNetwork implements RiJStateConcept, Animated {
         }
         
     }
+    /**
+    [[ * @see $See]]
+    [[ * @since $Since]]
+    */
+    //## ignore 
+    public class p_outnet_field_C extends RiJDefaultReactivePort {
+        
+        
+        // Constructors
+        
+        //## auto_generated 
+        public  p_outnet_field_C() {
+        }
+        
+    }
+    /**
+    [[ * @see $See]]
+    [[ * @since $Since]]
+    */
+    //## ignore 
+    public class p_net_backcen_C extends RiJDefaultReactivePort {
+        
+        
+        // Constructors
+        
+        //## auto_generated 
+        public  p_net_backcen_C() {
+        }
+        
+        /**
+         * @param part
+        */
+        //## operation connectCommNetwork(commNetwork) 
+        public void connectCommNetwork(commNetwork part) {
+            //#[ operation connectCommNetwork(commNetwork) 
+            InBound.setItsDefaultProvidedInterface(part);
+            InBound.setPort(this); // for IS_PORT macro support
+            
+            //#]
+        }
+        
+    }
     //#[ ignore
     /**  see com.ibm.rational.rhapsody.animation.Animated interface */
     public AnimClass getAnimClass() { 
@@ -757,6 +1281,10 @@ public class commNetwork implements RiJStateConcept, Animated {
         msg.add("itsSecurityPolicy", true, true, itsSecurityPolicy);
         msg.add("itsCenterController", false, true, itsCenterController);
         msg.add("itsFieldUnit", false, true, itsFieldUnit);
+        msg.add("itsSingleAccessPoint_0", true, true, itsSingleAccessPoint_0);
+        msg.add("itsCheckPoint_0", true, true, itsCheckPoint_0);
+        msg.add("itsRights_0", true, true, itsRights_0);
+        msg.add("itsSecurityPolicy_0", true, true, itsSecurityPolicy_0);
     }
     /** An inner class added as instrumentation for animation */
     public class Animate extends AnimInstance { 

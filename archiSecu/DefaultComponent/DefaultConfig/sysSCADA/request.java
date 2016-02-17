@@ -4,7 +4,7 @@
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: request
-//!	Generated Date	: Wed, 10, Feb 2016 
+//!	Generated Date	: Wed, 17, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/sysSCADA/request.java
 *********************************************************************/
 
@@ -27,7 +27,7 @@ import com.ibm.rational.rhapsody.animcom.animMessages.*;
 //## event request() 
 public class request extends RiJEvent implements AnimatedEvent {
     
-    public static final int request_sysSCADA_id = 18624;		//## ignore 
+    public static final int request_sysSCADA_id = 18623;		//## ignore 
     
     
     // Constructors

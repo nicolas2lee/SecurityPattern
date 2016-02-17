@@ -3,9 +3,9 @@
 	Login		: guoxi
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
-	Model Element	: requestService
+	Model Element	: toCheckPolicy
 //!	Generated Date	: Wed, 17, Feb 2016 
-	File Path	: DefaultComponent/DefaultConfig/sysSCADA/requestService.java
+	File Path	: DefaultComponent/DefaultConfig/sysSCADA/toCheckPolicy.java
 *********************************************************************/
 
 package sysSCADA;
@@ -18,31 +18,36 @@ import com.ibm.rational.rhapsody.oxf.RiJEvent;
 import com.ibm.rational.rhapsody.animcom.animMessages.*;
 
 //----------------------------------------------------------------------------
-// sysSCADA/requestService.java                                                                  
+// sysSCADA/toCheckPolicy.java                                                                  
 //----------------------------------------------------------------------------
 
 //## package sysSCADA 
 
 
-//## event requestService() 
-public class requestService extends RiJEvent implements AnimatedEvent {
+//## event toCheckPolicy(String) 
+public class toCheckPolicy extends RiJEvent implements AnimatedEvent {
     
-    public static final int requestService_sysSCADA_id = 18626;		//## ignore 
+    public static final int toCheckPolicy_sysSCADA_id = 18637;		//## ignore 
     
+    public String cPolicy;
     
     // Constructors
     
-    public  requestService() {
-        lId = requestService_sysSCADA_id;
+    public  toCheckPolicy() {
+        lId = toCheckPolicy_sysSCADA_id;
+    }
+    public  toCheckPolicy(String p_cPolicy) {
+        lId = toCheckPolicy_sysSCADA_id;
+        cPolicy = p_cPolicy;
     }
     
     public boolean isTypeOf(long id) {
-        return (requestService_sysSCADA_id==id);
+        return (toCheckPolicy_sysSCADA_id==id);
     }
     
     //#[ ignore
     /** the animated event proxy */
-    public static AnimEventClass animClass = new AnimEventClass("sysSCADA.requestService");
+    public static AnimEventClass animClass = new AnimEventClass("sysSCADA.toCheckPolicy");
     /**  see com.ibm.rational.rhapsody.animation.AnimatedEvent interface */
     public Object getFieldValue(java.lang.reflect.Field f, Object userInstance) { 
          Object obj = null;
@@ -56,9 +61,11 @@ public class requestService extends RiJEvent implements AnimatedEvent {
     }
     /**  see com.ibm.rational.rhapsody.animation.AnimatedEvent interface */
     public void addAttributes(AnimAttributes msg) {      
+          msg.add("cPolicy", cPolicy);
     }
     public String toString() {
-          String s="requestService(";      
+          String s="toCheckPolicy(";      
+          s += "cPolicy=" + AnimInstance.animToString(cPolicy) + " ";
           s += ")";
           return s;
     }
@@ -66,6 +73,6 @@ public class requestService extends RiJEvent implements AnimatedEvent {
     
 }
 /*********************************************************************
-	File Path	: DefaultComponent/DefaultConfig/sysSCADA/requestService.java
+	File Path	: DefaultComponent/DefaultConfig/sysSCADA/toCheckPolicy.java
 *********************************************************************/
 

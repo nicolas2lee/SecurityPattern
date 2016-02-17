@@ -4,7 +4,7 @@
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: LocalController
-//!	Generated Date	: Wed, 10, Feb 2016 
+//!	Generated Date	: Wed, 17, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/sysSCADA/LocalController.java
 *********************************************************************/
 
@@ -38,9 +38,9 @@ public class LocalController implements RiJStateConcept, Animated {
     
     public Reactive reactive;		//## ignore 
     
-    protected LocalController.p_con_field_C p_con_field;		//## ignore 
+    protected LocalController.p_loccon_ser_C p_loccon_ser;		//## ignore 
     
-    protected LocalController.p_con_check_C p_con_check;		//## ignore 
+    protected LocalController.p_loccon_check_C p_loccon_check;		//## ignore 
     
     protected FieldUnit itsFieldUnit;		//## link itsFieldUnit 
     
@@ -125,45 +125,45 @@ public class LocalController implements RiJStateConcept, Animated {
     }
     
     //## auto_generated 
-    public LocalController.p_con_field_C getP_con_field() {
-        return p_con_field;
+    public LocalController.p_loccon_ser_C getP_loccon_ser() {
+        return p_loccon_ser;
     }
     
     //## auto_generated 
-    public LocalController.p_con_field_C get_p_con_field() {
-        return p_con_field;
+    public LocalController.p_loccon_ser_C get_p_loccon_ser() {
+        return p_loccon_ser;
     }
     
     //## auto_generated 
-    public LocalController.p_con_field_C newP_con_field() {
-        p_con_field = new LocalController.p_con_field_C();
-        return p_con_field;
+    public LocalController.p_loccon_ser_C newP_loccon_ser() {
+        p_loccon_ser = new LocalController.p_loccon_ser_C();
+        return p_loccon_ser;
     }
     
     //## auto_generated 
-    public void deleteP_con_field() {
-        p_con_field=null;
+    public void deleteP_loccon_ser() {
+        p_loccon_ser=null;
     }
     
     //## auto_generated 
-    public LocalController.p_con_check_C getP_con_check() {
-        return p_con_check;
+    public LocalController.p_loccon_check_C getP_loccon_check() {
+        return p_loccon_check;
     }
     
     //## auto_generated 
-    public LocalController.p_con_check_C get_p_con_check() {
-        return p_con_check;
+    public LocalController.p_loccon_check_C get_p_loccon_check() {
+        return p_loccon_check;
     }
     
     //## auto_generated 
-    public LocalController.p_con_check_C newP_con_check() {
-        p_con_check = new LocalController.p_con_check_C();
-        return p_con_check;
+    public LocalController.p_loccon_check_C newP_loccon_check() {
+        p_loccon_check = new LocalController.p_loccon_check_C();
+        return p_loccon_check;
     }
     
     //## auto_generated 
-    public void deleteP_con_check() {
-        p_con_check=null;
+    public void deleteP_loccon_check() {
+        p_loccon_check=null;
     }
     
     //## operation sendServiceMission() 
@@ -174,7 +174,7 @@ public class LocalController implements RiJStateConcept, Animated {
                });
         
         //#[ operation sendServiceMission() 
-        getP_con_field().gen (new distributeService());
+        getp_loccon_ser().gen (new offerService());
         //#]
         }
         finally {
@@ -227,12 +227,12 @@ public class LocalController implements RiJStateConcept, Animated {
     
     //## auto_generated 
     protected void initRelations(RiJThread p_thread) {
-        p_con_field = newP_con_field();
-        p_con_check = newP_con_check();
-        if(getP_con_field() != null)
-           getP_con_field().connectLocalController(this);
-        if(getP_con_check() != null)
-           getP_con_check().connectLocalController(this);
+        p_loccon_ser = newP_loccon_ser();
+        p_loccon_check = newP_loccon_check();
+        if(getP_loccon_ser() != null)
+           getP_loccon_ser().connectLocalController(this);
+        if(getP_loccon_check() != null)
+           getP_loccon_check().connectLocalController(this);
     }
     
     //## auto_generated 
@@ -503,13 +503,13 @@ public class LocalController implements RiJStateConcept, Animated {
     [[ * @since $Since]]
     */
     //## ignore 
-    public class p_con_field_C extends RiJDefaultReactivePort {
+    public class p_loccon_ser_C extends RiJDefaultReactivePort {
         
         
         // Constructors
         
         //## auto_generated 
-        public  p_con_field_C() {
+        public  p_loccon_ser_C() {
         }
         
         /**
@@ -530,13 +530,13 @@ public class LocalController implements RiJStateConcept, Animated {
     [[ * @since $Since]]
     */
     //## ignore 
-    public class p_con_check_C extends RiJDefaultReactivePort {
+    public class p_loccon_check_C extends RiJDefaultReactivePort {
         
         
         // Constructors
         
         //## auto_generated 
-        public  p_con_check_C() {
+        public  p_loccon_check_C() {
         }
         
         /**

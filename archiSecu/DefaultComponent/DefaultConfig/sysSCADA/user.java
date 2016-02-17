@@ -4,7 +4,7 @@
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: user
-//!	Generated Date	: Wed, 10, Feb 2016 
+//!	Generated Date	: Wed, 17, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/sysSCADA/user.java
 *********************************************************************/
 
@@ -41,6 +41,8 @@ public class user implements Animated {
     //#]
     
     protected user.p_user_cen_C p_user_cen;		//## ignore 
+    
+    protected user.p_usr_backcen_C p_usr_backcen;		//## ignore 
     
     protected centerController itsCenterController;		//## link itsCenterController 
     
@@ -81,6 +83,27 @@ public class user implements Animated {
     //## auto_generated 
     public void deleteP_user_cen() {
         p_user_cen=null;
+    }
+    
+    //## auto_generated 
+    public user.p_usr_backcen_C getP_usr_backcen() {
+        return p_usr_backcen;
+    }
+    
+    //## auto_generated 
+    public user.p_usr_backcen_C get_p_usr_backcen() {
+        return p_usr_backcen;
+    }
+    
+    //## auto_generated 
+    public user.p_usr_backcen_C newP_usr_backcen() {
+        p_usr_backcen = new user.p_usr_backcen_C();
+        return p_usr_backcen;
+    }
+    
+    //## auto_generated 
+    public void deleteP_usr_backcen() {
+        p_usr_backcen=null;
     }
     
     //## auto_generated 
@@ -128,6 +151,7 @@ public class user implements Animated {
     //## auto_generated 
     protected void initRelations() {
         p_user_cen = newP_user_cen();
+        p_usr_backcen = newP_usr_backcen();
     }
     
     /**
@@ -142,6 +166,30 @@ public class user implements Animated {
         
         //## auto_generated 
         public  p_user_cen_C() {
+        }
+        
+        /**
+         * @param part
+        */
+        //## operation connectUser(user) 
+        public void connectUser(user part) {
+            //#[ operation connectUser(user) 
+            //#]
+        }
+        
+    }
+    /**
+    [[ * @see $See]]
+    [[ * @since $Since]]
+    */
+    //## ignore 
+    public class p_usr_backcen_C extends RiJDefaultReactivePort {
+        
+        
+        // Constructors
+        
+        //## auto_generated 
+        public  p_usr_backcen_C() {
         }
         
         /**

@@ -3,9 +3,9 @@
 	Login		: guoxi
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
-	Model Element	: requestService
+	Model Element	: checkpointField
 //!	Generated Date	: Wed, 17, Feb 2016 
-	File Path	: DefaultComponent/DefaultConfig/sysSCADA/requestService.java
+	File Path	: DefaultComponent/DefaultConfig/sysSCADA/checkpointField.java
 *********************************************************************/
 
 package sysSCADA;
@@ -18,31 +18,31 @@ import com.ibm.rational.rhapsody.oxf.RiJEvent;
 import com.ibm.rational.rhapsody.animcom.animMessages.*;
 
 //----------------------------------------------------------------------------
-// sysSCADA/requestService.java                                                                  
+// sysSCADA/checkpointField.java                                                                  
 //----------------------------------------------------------------------------
 
 //## package sysSCADA 
 
 
-//## event requestService() 
-public class requestService extends RiJEvent implements AnimatedEvent {
+//## event checkpointField() 
+public class checkpointField extends RiJEvent implements AnimatedEvent {
     
-    public static final int requestService_sysSCADA_id = 18626;		//## ignore 
+    public static final int checkpointField_sysSCADA_id = 18645;		//## ignore 
     
     
     // Constructors
     
-    public  requestService() {
-        lId = requestService_sysSCADA_id;
+    public  checkpointField() {
+        lId = checkpointField_sysSCADA_id;
     }
     
     public boolean isTypeOf(long id) {
-        return (requestService_sysSCADA_id==id);
+        return (checkpointField_sysSCADA_id==id);
     }
     
     //#[ ignore
     /** the animated event proxy */
-    public static AnimEventClass animClass = new AnimEventClass("sysSCADA.requestService");
+    public static AnimEventClass animClass = new AnimEventClass("sysSCADA.checkpointField");
     /**  see com.ibm.rational.rhapsody.animation.AnimatedEvent interface */
     public Object getFieldValue(java.lang.reflect.Field f, Object userInstance) { 
          Object obj = null;
@@ -58,7 +58,7 @@ public class requestService extends RiJEvent implements AnimatedEvent {
     public void addAttributes(AnimAttributes msg) {      
     }
     public String toString() {
-          String s="requestService(";      
+          String s="checkpointField(";      
           s += ")";
           return s;
     }
@@ -66,6 +66,6 @@ public class requestService extends RiJEvent implements AnimatedEvent {
     
 }
 /*********************************************************************
-	File Path	: DefaultComponent/DefaultConfig/sysSCADA/requestService.java
+	File Path	: DefaultComponent/DefaultConfig/sysSCADA/checkpointField.java
 *********************************************************************/
 

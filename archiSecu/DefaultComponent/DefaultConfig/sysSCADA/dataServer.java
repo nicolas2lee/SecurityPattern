@@ -4,7 +4,7 @@
 	Component	: DefaultComponent
 	Configuration 	: DefaultConfig
 	Model Element	: dataServer
-//!	Generated Date	: Wed, 10, Feb 2016 
+//!	Generated Date	: Wed, 17, Feb 2016 
 	File Path	: DefaultComponent/DefaultConfig/sysSCADA/dataServer.java
 *********************************************************************/
 
@@ -38,7 +38,9 @@ public class dataServer implements RiJStateConcept, Animated {
     
     public Reactive reactive;		//## ignore 
     
-    protected dataServer.p_data_cen_C p_data_cen;		//## ignore 
+    protected dataServer.p_ser_check_C p_ser_check;		//## ignore 
+    
+    protected dataServer.p_backSer_check_C p_backSer_check;		//## ignore 
     
     protected centerController itsCenterController;		//## link itsCenterController 
     
@@ -123,35 +125,56 @@ public class dataServer implements RiJStateConcept, Animated {
     }
     
     //## auto_generated 
-    public dataServer.p_data_cen_C getP_data_cen() {
-        return p_data_cen;
+    public dataServer.p_ser_check_C getP_ser_check() {
+        return p_ser_check;
     }
     
     //## auto_generated 
-    public dataServer.p_data_cen_C get_p_data_cen() {
-        return p_data_cen;
+    public dataServer.p_ser_check_C get_p_ser_check() {
+        return p_ser_check;
     }
     
     //## auto_generated 
-    public dataServer.p_data_cen_C newP_data_cen() {
-        p_data_cen = new dataServer.p_data_cen_C();
-        return p_data_cen;
+    public dataServer.p_ser_check_C newP_ser_check() {
+        p_ser_check = new dataServer.p_ser_check_C();
+        return p_ser_check;
     }
     
     //## auto_generated 
-    public void deleteP_data_cen() {
-        p_data_cen=null;
+    public void deleteP_ser_check() {
+        p_ser_check=null;
     }
     
-    //## operation sendbackData() 
-    public void sendbackData() {
+    //## auto_generated 
+    public dataServer.p_backSer_check_C getP_backSer_check() {
+        return p_backSer_check;
+    }
+    
+    //## auto_generated 
+    public dataServer.p_backSer_check_C get_p_backSer_check() {
+        return p_backSer_check;
+    }
+    
+    //## auto_generated 
+    public dataServer.p_backSer_check_C newP_backSer_check() {
+        p_backSer_check = new dataServer.p_backSer_check_C();
+        return p_backSer_check;
+    }
+    
+    //## auto_generated 
+    public void deleteP_backSer_check() {
+        p_backSer_check=null;
+    }
+    
+    //## operation sendToHMI() 
+    public void sendToHMI() {
         try {
-            animInstance().notifyMethodEntered("sendbackData",
+            animInstance().notifyMethodEntered("sendToHMI",
                new ArgData[] {
                });
         
-        //#[ operation sendbackData() 
-        getP_data_cen().gen (new backData());
+        //#[ operation sendToHMI() 
+        getP_data_HMI().gen(new selectedData());
         //#]
         }
         finally {
@@ -204,9 +227,12 @@ public class dataServer implements RiJStateConcept, Animated {
     
     //## auto_generated 
     protected void initRelations(RiJThread p_thread) {
-        p_data_cen = newP_data_cen();
-        if(getP_data_cen() != null)
-           getP_data_cen().connectDataServer(this);
+        p_ser_check = newP_ser_check();
+        p_backSer_check = newP_backSer_check();
+        if(getP_ser_check() != null)
+           getP_ser_check().connectDataServer(this);
+        if(getP_backSer_check() != null)
+           getP_backSer_check().connectDataServer(this);
     }
     
     //## auto_generated 
@@ -314,9 +340,6 @@ public class dataServer implements RiJStateConcept, Animated {
             int res = RiJStateReactive.TAKE_EVENT_NOT_CONSUMED;
             animInstance().notifyTransitionStarted("1");
             Idle_exit();
-            //#[ transition 1 
-            sendbackData();
-            //#]
             receiveRequest_entDef();
             animInstance().notifyTransitionEnded("1");
             res = RiJStateReactive.TAKE_EVENT_COMPLETE;
@@ -435,6 +458,9 @@ public class dataServer implements RiJStateConcept, Animated {
                 {
                     animInstance().notifyTransitionStarted("2");
                     receiveRequest_exit();
+                    //#[ transition 2 
+                    sendToHMI();
+                    //#]
                     Idle_entDef();
                     animInstance().notifyTransitionEnded("2");
                     res = RiJStateReactive.TAKE_EVENT_COMPLETE;
@@ -477,13 +503,40 @@ public class dataServer implements RiJStateConcept, Animated {
     [[ * @since $Since]]
     */
     //## ignore 
-    public class p_data_cen_C extends RiJDefaultReactivePort {
+    public class p_ser_check_C extends RiJDefaultReactivePort {
         
         
         // Constructors
         
         //## auto_generated 
-        public  p_data_cen_C() {
+        public  p_ser_check_C() {
+        }
+        
+        /**
+         * @param part
+        */
+        //## operation connectDataServer(dataServer) 
+        public void connectDataServer(dataServer part) {
+            //#[ operation connectDataServer(dataServer) 
+            InBound.setItsDefaultProvidedInterface(part);
+            InBound.setPort(this); // for IS_PORT macro support
+            
+            //#]
+        }
+        
+    }
+    /**
+    [[ * @see $See]]
+    [[ * @since $Since]]
+    */
+    //## ignore 
+    public class p_backSer_check_C extends RiJDefaultReactivePort {
+        
+        
+        // Constructors
+        
+        //## auto_generated 
+        public  p_backSer_check_C() {
         }
         
         /**
