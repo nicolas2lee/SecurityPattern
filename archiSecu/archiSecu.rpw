@@ -30,8 +30,8 @@ I-Logix-RPY-Archive version 8.10.0 * 6930133
 				- _name = "StatechartDiagram";
 				- _id = GUID b0ef8d33-3f57-43d5-9573-edc8e064a9d6;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 737 658 ;
+			- _UpLeft = 0 34 ;
+			- _DownRight = 786 694 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 		}
@@ -114,8 +114,8 @@ I-Logix-RPY-Archive version 8.10.0 * 6930133
 				- _name = "centerControllerSturct";
 				- _id = GUID 48227c4e-bb72-417e-a9fd-f9c72669db86;
 			}
-			- _UpLeft = -14 76 ;
-			- _DownRight = 564 509 ;
+			- _UpLeft = 0 76 ;
+			- _DownRight = 578 509 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 4;
 		}
